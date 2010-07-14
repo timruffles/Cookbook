@@ -1,4 +1,3 @@
-<h1>The Business Cookbook</h1>
 <h2>Recipies for success</h2>
 <h3>What do you want to cook up for your business?</h3>
 <% form_for('search') do |f| %>
@@ -9,12 +8,9 @@
 <% end %>
 <h3>Recent recipes:</h3>
 <ul id="recipes_list" class="stream">
-  <% [{:name => 'Hit me!', :tag => :marketing, :chef => 'Crooks r us'},
-      {:name => 'Twitter guru', :tag => :internet, :chef => 'J A Arthurpa'}].each do |recipe| %>
+  <% @recipes.each do |recipe| %>
     <li>
-      <h4><%= recipe[:name] %></h4>
-      <p class="tag_icon">Tagged with <%= recipe[:tag] %></p>
-      <p class="chef">Cooked by: <span class="chef_name"><%= recipe[:chef] %></span></p>
+      <h4><%= link_to recipe.name, recipe %></h4>
     </li>
   <% end %>
 </ul>

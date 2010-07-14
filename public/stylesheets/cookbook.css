@@ -5,6 +5,15 @@ h1 {
 	font-size:2em;
 	margin-top:0;
 }
+h2 {
+	font-size:1.75em;
+}
+h3 {
+	font-size:1.5em;
+}
+h4 {
+	font-size:1.25em;
+}
 /* main */
 #doc2 {
 	overflow:hidden;
@@ -51,33 +60,40 @@ h1 {
 }
 
 /* recipies */
-.recipe_form {
-	overflow:auto;
-}
-	.recipe_form label {
-		font-size:2em;
-		line-height:1.5em;
+	/* new */
+	.recipe_form {
+		overflow:auto;
 	}
-	.recipe_form input, .recipe_form textarea {
+		.recipe_form label {
+			font-size:2em;
+			line-height:1.5em;
+		}
+		.recipe_form input, .recipe_form textarea {
+			font-size:1.5em;
+		}
+		.recipe_form p {
+			float:left;
+		}
+		.recipe_form .steps {
+			clear:left;
+		}
+			.recipe_form .steps textarea {
+				width:20em;
+				height:20em;
+			}
+			.recipe_form .ingredients textarea {
+				width:10em;
+				height:10em;
+			}
+		.recipe_form .ingredients {
+			margin-left:1em;
+		}
+		.recipe_form .submit {
+			clear:left;
+		}
+	/* show */
+	.recipe_check_list li {
 		font-size:1.5em;
-	}
-	.recipe_form p {
-		float:left;
-	}
-	.recipe_form .steps {
-		clear:left;
-	}
-		.recipe_form .steps textarea {
-			width:20em;
-			height:20em;
-		}
-		.recipe_form .ingredients textarea {
-			width:10em;
-			height:10em;
-		}
-	.recipe_form .ingredients {
-		margin-left:1em;
-	}
-	.recipe_form .submit {
-		clear:left;
+		line-height:1.75em;
+		list-style-type:none;
 	}

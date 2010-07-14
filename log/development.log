@@ -2523,3 +2523,1190 @@ Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:40:22) [GET]
 Rendering template within layouts/application
 Rendering recipes/index
 Completed in 14ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:41:41) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.5ms)
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#create (for 127.0.0.1 at 2010-07-14 17:42:40) [POST]
+  Parameters: {"commit"=>"Create recipe", "authenticity_token"=>"mUL5+rsvYjXxmYfS/vj0AGO3zQCUy4B9WnjUdFZfahQ=", "recipe"=>{"steps"=>"1. Make sure your language is imperative\r\n2. Ensure you don't slip into description or narration\r\n3. Make it tasty!", "name"=>"How to write a recipe", "ingredients"=>""}}
+  [4;36;1mRecipe Create (28.1ms)[0m   [0;1mINSERT INTO "recipes" ("name", "steps", "created_at", "updated_at", "ingredients", "cook_id") VALUES('How to write a recipe', '1. Make sure your language is imperative
+2. Ensure you don''t slip into description or narration
+3. Make it tasty!', '2010-07-14 16:42:40', '2010-07-14 16:42:40', '', NULL)[0m
+Redirected to http://127.0.0.1:3000/recipes/1
+Completed in 38ms (DB: 28) | 302 Found [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:42:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:42:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:46:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:46:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:46:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:46:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:47:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:47:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:47:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:47:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:48:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 69ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:48:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:49:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #8 of app/views/recipes/show.html.erb:
+5: 
+6: <p>
+7:   <b>Steps:</b>
+8:   <% form_for(@step) do |f| %>
+9:     <ul>
+10:       <% @recipe.each_step do |text, number| %>
+11:         <li>
+
+    app/views/recipes/show.html.erb:8
+    app/controllers/recipes_controller.rb:18:in `show'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (54.2ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:49:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #8 of app/views/recipes/show.html.erb:
+5: 
+6: <p>
+7:   <b>Steps:</b>
+8:   <% form_for(@step) do |f| %>
+9:     <ul>
+10:       <% @recipe.each_step do |text, number| %>
+11:         <li>
+
+    app/views/recipes/show.html.erb:8
+    app/controllers/recipes_controller.rb:18:in `show'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:49:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #8 of app/views/recipes/show.html.erb:
+5: 
+6: <p>
+7:   <b>Steps:</b>
+8:   <% form_for(@step) do |f| %>
+9:     <ul>
+10:       <% @recipe.each_step do |text, number| %>
+11:         <li>
+
+    app/views/recipes/show.html.erb:8
+    app/controllers/recipes_controller.rb:18:in `show'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (120.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:49:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #8 of app/views/recipes/show.html.erb:
+5: 
+6: <p>
+7:   <b>Steps:</b>
+8:   <% form_for(@step) do |f| %>
+9:     <ul>
+10:       <% @recipe.each_step do |text, number| %>
+11:         <li>
+
+    app/views/recipes/show.html.erb:8
+    app/controllers/recipes_controller.rb:18:in `show'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:49:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+
+ActionView::TemplateError (undefined method `checkbox' for #<ActionView::Helpers::FormBuilder:0x2354fec>) on line #12 of app/views/recipes/show.html.erb:
+9:     <ul>
+10:       <% @recipe.each_step do |text, number| %>
+11:         <li>
+12:           <%= f.checkbox :done %>
+13:           <%= text %>
+14:         </li>
+15:       <% end %>
+
+    app/views/recipes/show.html.erb:12
+    app/models/recipe.rb:10:in `each_step'
+    app/models/recipe.rb:7:in `each'
+    app/models/recipe.rb:7:in `each_step'
+    app/views/recipes/show.html.erb:10
+    app/views/recipes/show.html.erb:8
+    app/controllers/recipes_controller.rb:18:in `show'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:49:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:50:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:50:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:50:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:51:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:51:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:51:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:51:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (62.7ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 74ms (View: 5, DB: 63) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:51:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:51:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:52:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:52:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:52:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:52:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:53:02) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:53:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:54:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:55:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.6ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+ERROR: compiling _run_erb_app47views47recipes47show46html46erb RAISED compile error
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:12: syntax error, unexpected '>'
+...); @output_buffer.concat "' %>\n            "
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:13: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n          </label>\n        <...
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:13: unknown regexp option - l
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:13: syntax error, unexpected $undefined
+...      </label>\n        </li>\n      "
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:16: syntax error, unexpected $undefined, expecting ')'
+;  end ; @output_buffer.concat "\n    </ul>\n  "
+                                 ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:18: unknown regexp option - p
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:18: syntax error, unexpected $undefined
+...@output_buffer.concat "\n</p>\n<!--\n<p>\n  <b>Ingredients:<...
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:18: syntax error, unexpected $undefined
+...t_buffer.concat "\n</p>\n<!--\n<p>\n  <b>Ingredients:</b>\n ...
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:18: syntax error, unexpected $undefined
+...fer.concat "\n</p>\n<!--\n<p>\n  <b>Ingredients:</b>\n  "
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:18: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+...\n<!--\n<p>\n  <b>Ingredients:</b>\n  "
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:18: syntax error, unexpected $undefined
+...-\n<p>\n  <b>Ingredients:</b>\n  "
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:23: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n</p>\n-->\n\n"
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:23: unterminated string meets end of file
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:23: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR
+Function body:           def _run_erb_app47views47recipes47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h2>\n  Cooking: "
+; @output_buffer.concat((h @recipe.name ).to_s); @output_buffer.concat "\n</h2>\n\n<p>\n  <h3>Steps:</h3>\n  "
+
+
+
+
+;  form_for('step') do |f| ; @output_buffer.concat "\n    <ul class=\"recipe_check_list\">\n      "
+
+;  @recipe.each_step do |text, number| ; @output_buffer.concat "\n        <li>\n          <label for='done_"
+
+; @output_buffer.concat(( number ).to_s); @output_buffer.concat "'>\n            "
+; @output_buffer.concat(( f.check_box 'done_<%= number ).to_s); @output_buffer.concat "' %>\n            "
+; @output_buffer.concat(( text ).to_s); @output_buffer.concat "\n          </label>\n        </li>\n      "
+
+
+;  end ; @output_buffer.concat "\n    </ul>\n  "
+
+;  end ; @output_buffer.concat "\n</p>\n<!--\n<p>\n  <b>Ingredients:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @recipe.ingredients ).to_s); @output_buffer.concat "\n</p>\n-->\n\n"
+
+
+
+; @output_buffer.concat(( link_to 'Edit', edit_recipe_path(@recipe) ).to_s); @output_buffer.concat " |\n"
+; @output_buffer.concat(( link_to 'Back', recipes_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:23:in `compile!'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/timruffles/Development/Cothink/cookbook/app/controllers/recipes_controller.rb:18:in `show'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/Users/timruffles/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.8/lib/commands/server.rb:111
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:12: syntax error, unexpected '>'
+...); @output_buffer.concat "' %>\n            "
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:13: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n          </label>\n        <...
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:13: unknown regexp option - l
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:13: syntax error, unexpected $undefined
+...      </label>\n        </li>\n      "
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:16: syntax error, unexpected $undefined, expecting ')'
+;  end ; @output_buffer.concat "\n    </ul>\n  "
+                                 ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:18: unknown regexp option - p
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:18: syntax error, unexpected $undefined
+...@output_buffer.concat "\n</p>\n<!--\n<p>\n  <b>Ingredients:<...
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:18: syntax error, unexpected $undefined
+...t_buffer.concat "\n</p>\n<!--\n<p>\n  <b>Ingredients:</b>\n ...
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:18: syntax error, unexpected $undefined
+...fer.concat "\n</p>\n<!--\n<p>\n  <b>Ingredients:</b>\n  "
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:18: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+...\n<!--\n<p>\n  <b>Ingredients:</b>\n  "
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:18: syntax error, unexpected $undefined
+...-\n<p>\n  <b>Ingredients:</b>\n  "
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:23: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n</p>\n-->\n\n"
+                              ^
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:23: unterminated string meets end of file
+/Users/timruffles/Development/Cothink/cookbook/app/views/recipes/show.html.erb:23: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR) on line #12 of app/views/recipes/show.html.erb:
+9:       <% @recipe.each_step do |text, number| %>
+10:         <li>
+11:           <label for='done_<%= number %>'>
+12:             <%= f.check_box 'done_<%= number %>' %>
+13:             <%= text %>
+14:           </label>
+15:         </li>
+
+    app/views/recipes/show.html.erb:23:in `compile!'
+    app/controllers/recipes_controller.rb:18:in `show'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:55:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:55:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:55:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:56:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+
+ActionView::TemplateError (undefined method `label_for' for #<ActionView::Helpers::FormBuilder:0x247a264>) on line #12 of app/views/recipes/show.html.erb:
+9:       <% @recipe.each_step do |text, number| %>
+10:         <li>
+11:           <%= f.check_box "done_#{number}" %>
+12:           <%= f.label_for "done_#{number}", text %>
+13:         </li>
+14:       <% end %>
+15:     </ul>
+
+    app/views/recipes/show.html.erb:12
+    app/models/recipe.rb:10:in `each_step'
+    app/models/recipe.rb:7:in `each'
+    app/models/recipe.rb:7:in `each_step'
+    app/views/recipes/show.html.erb:9
+    app/views/recipes/show.html.erb:7
+    app/controllers/recipes_controller.rb:18:in `show'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:56:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:57:15) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.8ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#create (for 127.0.0.1 at 2010-07-14 17:57:28) [POST]
+  Parameters: {"commit"=>"Create recipe", "authenticity_token"=>"mUL5+rsvYjXxmYfS/vj0AGO3zQCUy4B9WnjUdFZfahQ=", "recipe"=>{"steps"=>"1. Read: Convergence Culture by Henry Jenkins: http://www.amazon.co.uk/Convergence-Culture-Where-Media-Collide/dp/0814742815\r\n2. Watch: http://www.youtube.com/watch?v=MpIOClX1jPE\r\n3. Watch: http://www.slideshare.net/padday/the-real-life-social-network-v2\r\n4. Read: http://www.dummies.com/how-to/content/twitter-for-dummies-cheat-sheet.html\r\n5. Read: http://www.dummies.com/how-to/content/facebook-marketing-for-dummies-cheat-sheet.html\r\n6. Attend: http://www.mashupevent.com/being-social_10\r\n7. Attend: http://tuttleclub.wordpress.com/", "name"=>"Become a social media marketing guru", "ingredients"=>""}}
+  [4;35;1mRecipe Create (0.5ms)[0m   [0mINSERT INTO "recipes" ("name", "steps", "created_at", "updated_at", "ingredients", "cook_id") VALUES('Become a social media marketing guru', '1. Read: Convergence Culture by Henry Jenkins: http://www.amazon.co.uk/Convergence-Culture-Where-Media-Collide/dp/0814742815
+2. Watch: http://www.youtube.com/watch?v=MpIOClX1jPE
+3. Watch: http://www.slideshare.net/padday/the-real-life-social-network-v2
+4. Read: http://www.dummies.com/how-to/content/twitter-for-dummies-cheat-sheet.html
+5. Read: http://www.dummies.com/how-to/content/facebook-marketing-for-dummies-cheat-sheet.html
+6. Attend: http://www.mashupevent.com/being-social_10
+7. Attend: http://tuttleclub.wordpress.com/', '2010-07-14 16:57:28', '2010-07-14 16:57:28', '', NULL)[0m
+Redirected to http://127.0.0.1:3000/recipes/2
+Completed in 9ms (DB: 1) | 302 Found [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:57:28) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/recipes/2]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:59:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/2]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 17:59:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.6ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 17ms (View: 6, DB: 1) | 200 OK [http://127.0.0.1/recipes/2]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:00:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 20ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/2]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2010-07-14 18:00:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/edit
+Rendered recipes/_form (7.3ms)
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/recipes/2/edit]
+
+
+Processing RecipesController#images to png (for 127.0.0.1 at 2010-07-14 18:00:27) [GET]
+  Parameters: {"id"=>"legal-tab"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#images to png (for 127.0.0.1 at 2010-07-14 18:00:27) [GET]
+  Parameters: {"id"=>"sales-tab"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#images to png (for 127.0.0.1 at 2010-07-14 18:00:27) [GET]
+  Parameters: {"id"=>"marketing-tab"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#images to png (for 127.0.0.1 at 2010-07-14 18:00:27) [GET]
+  Parameters: {"id"=>"planning-tab"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#images to png (for 127.0.0.1 at 2010-07-14 18:00:27) [GET]
+  Parameters: {"id"=>"startup-tab"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#images to png (for 127.0.0.1 at 2010-07-14 18:00:27) [GET]
+  Parameters: {"id"=>"workforce-tab"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#images to png (for 127.0.0.1 at 2010-07-14 18:00:27) [GET]
+  Parameters: {"id"=>"legal-tab"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#images to png (for 127.0.0.1 at 2010-07-14 18:00:28) [GET]
+  Parameters: {"id"=>"sales-tab"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#images to png (for 127.0.0.1 at 2010-07-14 18:00:28) [GET]
+  Parameters: {"id"=>"planning-tab"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#images to png (for 127.0.0.1 at 2010-07-14 18:00:28) [GET]
+  Parameters: {"id"=>"marketing-tab"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#images to png (for 127.0.0.1 at 2010-07-14 18:00:28) [GET]
+  Parameters: {"id"=>"startup-tab"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#images to png (for 127.0.0.1 at 2010-07-14 18:00:28) [GET]
+  Parameters: {"id"=>"workforce-tab"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:00:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/recipes/2]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:01:04) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/recipes/2]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:01:13) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 83ms (View: 78, DB: 0) | 200 OK [http://127.0.0.1/recipes/2]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:01:44) [GET]
+  [4;36;1mRecipe Load (0.7ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:02:40) [GET]
+  [4;35;1mRecipe Load (0.5ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/recipes/index.html.erb:
+8: <% end %>
+9: <h3>Recent recipes:</h3>
+10: <ul id="recipes_list" class="stream">
+11:   <% @recipies.each do |recipe| %>
+12:     <li>
+13:       <h4><%= link_to @recipe %></h4>
+14:     </li>
+
+    app/views/recipes/index.html.erb:11
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:02:48) [GET]
+  [4;36;1mRecipe Load (0.5ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/recipes/index.html.erb:
+8: <% end %>
+9: <h3>Recent recipes:</h3>
+10: <ul id="recipes_list" class="stream">
+11:   <% @recipies.each do |recipe| %>
+12:     <li>
+13:       <h4><%= link_to recipe %></h4>
+14:     </li>
+
+    app/views/recipes/index.html.erb:11
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:02:49) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/recipes/index.html.erb:
+8: <% end %>
+9: <h3>Recent recipes:</h3>
+10: <ul id="recipes_list" class="stream">
+11:   <% @recipies.each do |recipe| %>
+12:     <li>
+13:       <h4><%= link_to recipe %></h4>
+14:     </li>
+
+    app/views/recipes/index.html.erb:11
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:02:57) [GET]
+  [4;36;1mRecipe Load (0.5ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:03:30) [GET]
+  [4;35;1mRecipe Load (0.5ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:03:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/recipes/2]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:03:36) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:03:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:03:37) [GET]
+  [4;35;1mRecipe Load (0.5ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:03:38) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/recipes/2]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:03:40) [GET]
+  [4;35;1mRecipe Load (0.5ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:03:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:03:42) [GET]
+  [4;35;1mRecipe Load (0.5ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/recipes]
