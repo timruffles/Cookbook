@@ -26,7 +26,7 @@ class RecipesController < ApplicationController
   def new
     
     @recipe = Recipe.new
-    @recipe.steps = "1. List steps with N. format. You can put in anything you like to make your recipe tasty.\n2. Like a <a href='http://google.com'>html link</a>!"
+    @recipe.steps = "1. List steps with N. format. You can put in anything you like to make your recipe tasty.\n2. Pop in urls and they'll be turned into a clickable link!"
     @recipe.ingredients = "Pop in suggested resources\nOr other recipes that are prerequisites\nOne per line"
 
     respond_to do |format|

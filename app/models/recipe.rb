@@ -12,7 +12,7 @@ class Recipe < ActiveRecord::Base
   end
   
   def make_links part
-    part.gsub(/(http:\/\/\S*)/,'<a href="\1">Click here</a>')
+    part.gsub(/(http:\/\/\S*)/,'<a href="\1">\1</a>')
   end
   
 end

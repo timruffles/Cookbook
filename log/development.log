@@ -3891,3 +3891,32 @@ Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:14:49) [GET]
 Rendering template within layouts/application
 Rendering recipes/index
 Completed in 13ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:15:35) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 18:15:36) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (8.6ms)
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 18:16:28) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.2ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:16:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
