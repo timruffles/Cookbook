@@ -3725,3 +3725,162 @@ Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:04:24) [GET]
 Rendering template within layouts/application
 Rendering recipes/show
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/recipes/2]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:09:43) [GET]
+  Parameters: {"id"=>"2"}
+
+ActiveRecord::StatementInvalid (Could not find table 'recipes'):
+  app/controllers/recipes_controller.rb:16:in `show'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:09:43) [GET]
+  Parameters: {"id"=>"2"}
+
+ActiveRecord::StatementInvalid (Could not find table 'recipes'):
+  app/controllers/recipes_controller.rb:16:in `show'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (106.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRecipes (20100714114633)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "chef_id" integer, "ingredients" text, "steps" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100714114633')[0m
+Migrating to CreateChefs (20100714163737)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "chefs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "password" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100714163737')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("chefs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("recipes")[0m
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:10:10) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.1ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Recipe with ID=2):
+  app/controllers/recipes_controller.rb:16:in `show'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:10:13) [GET]
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 18:10:16) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.1ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#create (for 127.0.0.1 at 2010-07-14 18:10:28) [POST]
+  Parameters: {"commit"=>"Create recipe", "authenticity_token"=>"mUL5+rsvYjXxmYfS/vj0AGO3zQCUy4B9WnjUdFZfahQ=", "recipe"=>{"steps"=>"1. Read: Convergence Culture by Henry Jenkins: http://www.amazon.co.uk/Convergence-Culture-Where-Media-Collide/dp/0814742815\r\n2. Watch: http://www.youtube.com/watch?v=MpIOClX1jPE\r\n3. Watch: http://www.slideshare.net/padday/the-real-life-social-network-v2\r\n4. Read: http://www.dummies.com/how-to/content/twitter-for-dummies-cheat-sheet.html\r\n5. Read: http://www.dummies.com/how-to/content/facebook-marketing-for-dummies-cheat-sheet.html\r\n6. Attend: http://www.mashupevent.com/being-social_10\r\n7. Attend: http://tuttleclub.wordpress.com/\r\n", "name"=>"Become a social media marketing guru", "ingredients"=>""}}
+  [4;36;1mRecipe Create (0.4ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Become a social media marketing guru', NULL, '1. Read: Convergence Culture by Henry Jenkins: http://www.amazon.co.uk/Convergence-Culture-Where-Media-Collide/dp/0814742815
+2. Watch: http://www.youtube.com/watch?v=MpIOClX1jPE
+3. Watch: http://www.slideshare.net/padday/the-real-life-social-network-v2
+4. Read: http://www.dummies.com/how-to/content/twitter-for-dummies-cheat-sheet.html
+5. Read: http://www.dummies.com/how-to/content/facebook-marketing-for-dummies-cheat-sheet.html
+6. Attend: http://www.mashupevent.com/being-social_10
+7. Attend: http://tuttleclub.wordpress.com/
+', '2010-07-14 17:10:28', '2010-07-14 17:10:28', '')[0m
+Redirected to http://127.0.0.1:3000/recipes/1
+Completed in 34ms (DB: 0) | 302 Found [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:10:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:10:30) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:10:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:10:33) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/recipes]
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT * FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM recipes[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM chefs[0m

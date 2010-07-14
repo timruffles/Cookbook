@@ -9,20 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100714114654) do
+ActiveRecord::Schema.define(:version => 20100714163737) do
 
-  create_table "cooks", :force => true do |t|
+  create_table "chefs", :force => true do |t|
     t.string   "name"
     t.string   "email"
     t.string   "password"
-    t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "recipes", :force => true do |t|
     t.string   "name"
-    t.integer  "cook_id"
+    t.integer  "chef_id"
     t.text     "ingredients"
     t.text     "steps"
     t.datetime "created_at"
