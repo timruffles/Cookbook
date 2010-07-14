@@ -1,13 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :recipes
-
-  map.resources :cooks
+  map.resources :chefs
 
   map.resources :recipes
 
-  map.resources :cooks
+  map.resources :recipes
 
   map.resources :recipes
+  
+  map.root :controller => "recipes"
 
   # The priority is based upon order of creation: first created -> highest priority.
 

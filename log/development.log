@@ -1946,3 +1946,580 @@ Rendering template within layouts/application
 Rendering recipes/new
 Rendered recipes/_form (6.3ms)
 Completed in 15ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:23:13) [GET]
+  [4;36;1mRecipe Load (0.8ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #5 of app/views/recipes/index.html.erb:
+2: <h2>What do you want to cook up for your business?</h2>
+3: <% form_for('search') do |f| %>
+4:   
+5:   <% t.text_field('q') %>
+6:   <% t.button('submit') %>
+7:   
+8: <% end %>
+
+    app/views/recipes/index.html.erb:5:in `t'
+    app/views/recipes/index.html.erb:5
+    app/views/recipes/index.html.erb:3
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (68.2ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:23:20) [GET]
+  [4;35;1mRecipe Load (2.1ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #5 of app/views/recipes/index.html.erb:
+2: <h2>What do you want to cook up for your business?</h2>
+3: <% form_for('search') do |f| %>
+4:   
+5:   <% t.text_field('q') %>
+6:   <% t.button('submit') %>
+7:   
+8: <% end %>
+
+    app/views/recipes/index.html.erb:5:in `t'
+    app/views/recipes/index.html.erb:5
+    app/views/recipes/index.html.erb:3
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (147.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:24:38) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #5 of app/views/recipes/index.html.erb:
+2: <h2>What do you want to cook up for your business?</h2>
+3: <% form_for('search') do |f| %>
+4:   
+5:   <% t.text_field(:q) %>
+6:   <%= f.submit 'Go' %>
+7: <% end %>
+8: 
+
+    app/views/recipes/index.html.erb:5:in `t'
+    app/views/recipes/index.html.erb:5
+    app/views/recipes/index.html.erb:3
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:24:39) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #5 of app/views/recipes/index.html.erb:
+2: <h2>What do you want to cook up for your business?</h2>
+3: <% form_for('search') do |f| %>
+4:   
+5:   <% t.text_field(:q) %>
+6:   <%= f.submit 'Go' %>
+7: <% end %>
+8: 
+
+    app/views/recipes/index.html.erb:5:in `t'
+    app/views/recipes/index.html.erb:5
+    app/views/recipes/index.html.erb:3
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:24:40) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #5 of app/views/recipes/index.html.erb:
+2: <h2>What do you want to cook up for your business?</h2>
+3: <% form_for('search') do |f| %>
+4:   
+5:   <% t.text_field(:q) %>
+6:   <%= f.submit 'Go' %>
+7: <% end %>
+8: 
+
+    app/views/recipes/index.html.erb:5:in `t'
+    app/views/recipes/index.html.erb:5
+    app/views/recipes/index.html.erb:3
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (115.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:24:40) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #5 of app/views/recipes/index.html.erb:
+2: <h2>What do you want to cook up for your business?</h2>
+3: <% form_for('search') do |f| %>
+4:   
+5:   <% t.text_field(:q) %>
+6:   <%= f.submit 'Go' %>
+7: <% end %>
+8: 
+
+    app/views/recipes/index.html.erb:5:in `t'
+    app/views/recipes/index.html.erb:5
+    app/views/recipes/index.html.erb:3
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:24:40) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #5 of app/views/recipes/index.html.erb:
+2: <h2>What do you want to cook up for your business?</h2>
+3: <% form_for('search') do |f| %>
+4:   
+5:   <% t.text_field(:q) %>
+6:   <%= f.submit 'Go' %>
+7: <% end %>
+8: 
+
+    app/views/recipes/index.html.erb:5:in `t'
+    app/views/recipes/index.html.erb:5
+    app/views/recipes/index.html.erb:3
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (115.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:24:40) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #5 of app/views/recipes/index.html.erb:
+2: <h2>What do you want to cook up for your business?</h2>
+3: <% form_for('search') do |f| %>
+4:   
+5:   <% t.text_field(:q) %>
+6:   <%= f.submit 'Go' %>
+7: <% end %>
+8: 
+
+    app/views/recipes/index.html.erb:5:in `t'
+    app/views/recipes/index.html.erb:5
+    app/views/recipes/index.html.erb:3
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:24:41) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #5 of app/views/recipes/index.html.erb:
+2: <h2>What do you want to cook up for your business?</h2>
+3: <% form_for('search') do |f| %>
+4:   
+5:   <% t.text_field(:q) %>
+6:   <%= f.submit 'Go' %>
+7: <% end %>
+8: 
+
+    app/views/recipes/index.html.erb:5:in `t'
+    app/views/recipes/index.html.erb:5
+    app/views/recipes/index.html.erb:3
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:24:50) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #5 of app/views/recipes/index.html.erb:
+2: <h2>What do you want to cook up for your business?</h2>
+3: <% form_for('search') do |f| %>
+4:   
+5:   <% t.text_field :q %>
+6:   <%= f.submit 'Go' %>
+7:   
+8: <% end %>
+
+    app/views/recipes/index.html.erb:5:in `t'
+    app/views/recipes/index.html.erb:5
+    app/views/recipes/index.html.erb:3
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (114.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:24:56) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:25:12) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:25:24) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:25:25) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:25:32) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:25:48) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:26:23) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:26:29) [GET]
+  [4;35;1mRecipe Load (0.5ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:26:39) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:26:52) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:27:05) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:27:09) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:27:15) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:28:05) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:28:06) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:28:06) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:28:07) [GET]
+  [4;36;1mRecipe Load (0.5ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:28:24) [GET]
+  [4;35;1mRecipe Load (0.5ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:32:04) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+
+ActionView::TemplateError (undefined method `name' for {:cook=>"Crooks r us", :tag=>:marketing, :name=>"Hit me!"}:Hash) on line #13 of app/views/recipes/index.html.erb:
+10: <ul id="recipes_list" class="stream">
+11:   <% [{:name => 'Hit me!', :tag => :marketing, :cook => 'Crooks r us'}].each do |recipe| %>
+12:     <li>
+13:       <h4><%= recipe.name%><h4>
+14:       <p class="tag_icon">Tagged with <%= recipe.tag %></p>
+15:       <p class="cook">Cooked by: <span class="cook_name"><%= recipe.cook %></span></p>
+16:     </li>
+
+    app/views/recipes/index.html.erb:13
+    app/views/recipes/index.html.erb:11:in `each'
+    app/views/recipes/index.html.erb:11
+    app/controllers/recipes_controller.rb:7:in `index'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (119.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:32:25) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:32:34) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:33:15) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:33:49) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:34:09) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:34:30) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:34:38) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:35:28) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:35:50) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:38:26) [GET]
+  [4;36;1mRecipe Load (0.9ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 59ms (View: 16, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 17:40:22) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/]

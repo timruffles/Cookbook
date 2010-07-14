@@ -1,26 +1,31 @@
-<h1>Listing recipes</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Cook</th>
-    <th>Ingredients</th>
-    <th>Steps</th>
-  </tr>
-
-<% @recipes.each do |recipe| %>
-  <tr>
-    <td><%=h recipe.name %></td>
-    <td><%=h recipe.cook_id %></td>
-    <td><%=h recipe.ingredients %></td>
-    <td><%=h recipe.steps %></td>
-    <td><%= link_to 'Show', recipe %></td>
-    <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-    <td><%= link_to 'Destroy', recipe, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+<h1>The Business Cookbook</h1>
+<h2>Recipies for success</h2>
+<h3>What do you want to cook up for your business?</h3>
+<% form_for('search') do |f| %>
+  
+  <%= f.text_field :q %>
+  <%= f.submit 'Go' %>
+  
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New recipe', new_recipe_path %>
+<h3>Recent recipes:</h3>
+<ul id="recipes_list" class="stream">
+  <% [{:name => 'Hit me!', :tag => :marketing, :chef => 'Crooks r us'},
+      {:name => 'Twitter guru', :tag => :internet, :chef => 'J A Arthurpa'}].each do |recipe| %>
+    <li>
+      <h4><%= recipe[:name] %></h4>
+      <p class="tag_icon">Tagged with <%= recipe[:tag] %></p>
+      <p class="chef">Cooked by: <span class="chef_name"><%= recipe[:chef] %></span></p>
+    </li>
+  <% end %>
+</ul>
+<h3>Featured chefs:</h3>
+<ul id="chef_list" class="stream">
+  <% [{:name => 'Crooks r us', :recipes => 120, :popularity => 47},
+      {:name => 'J A Arthurpa', :recipies => 86, :popularity => 24}].each do |chef| %>
+    <li>
+      <h4><%= chef[:name] %></h4>
+      <p>Recipies <%= chef[:recipes] %></p>
+      <p>Recipies <%= chef[:popularity] %></p>
+    </li>
+  <% end %>
+</ul>

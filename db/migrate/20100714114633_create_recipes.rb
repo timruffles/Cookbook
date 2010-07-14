@@ -2,7 +2,7 @@ class CreateRecipes < ActiveRecord::Migration
   def self.up
     create_table :recipes do |t|
       t.string :name
-      t.integer :cook_id
+      t.integer :chef_id
       t.text :ingredients
       t.text :steps
 

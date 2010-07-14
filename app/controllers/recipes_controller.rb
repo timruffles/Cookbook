@@ -9,7 +9,7 @@ class RecipesController < ApplicationController
       format.xml  { render :xml => @recipes }
     end
   end
-
+  
   # GET /recipes/1
   # GET /recipes/1.xml
   def show

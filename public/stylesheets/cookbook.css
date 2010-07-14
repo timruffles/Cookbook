@@ -1,10 +1,13 @@
 body {
 	background:#DDD;
 }
+h1 {
+	font-size:2em;
+	margin-top:0;
+}
 /* main */
 #doc2 {
-	overflow-x:auto;
-	overflow-y:hidden;
+	overflow:hidden;
 }
 #wrap {
 	float:left;
@@ -12,40 +15,52 @@ body {
 	background:#fff;
 	padding:1em;
 }
+	#content {
+		min-height:750px;
+	}
+/* common page elements */
 #tabs {
 	float:left;
 	width:100px;
 	padding:2em 0 0 0;margin:0;
 }
-#tabs li {
-	padding:0;margin:0 0 1em 0;
-	height:120px;
-	width:100px;
-	list-style-type:none;
-	background:#fff;
-	display:block;
-	background-repeat:no-repeat;
-	background-position:center center;
-	text-indent:-500em;
-}
-#tabs li a {
-	height:120px;
-	width:110px;
-	display:block;
-}
-#tabs a:hover { 
-	background: none;
-}
-input, textarea {
-	font-size:1.5em;
-}
-.recipe_form label {
+	#tabs li {
+		padding:0;margin:0 0 1em 0;
+		height:120px;
+		width:100px;
+		list-style-type:none;
+		background:#fff;
+		display:block;
+		background-repeat:no-repeat;
+		background-position:center center;
+		text-indent:-500em;
+	}
+	#tabs li a {
+		height:120px;
+		width:110px;
+		display:block;
+	}
+	#tabs a:hover { 
+		background: none;
+	}
+/* forms */
+
+/* search */
+#search_q {
 	font-size:2em;
-	line-height:1.5em;
 }
+
+/* recipies */
 .recipe_form {
 	overflow:auto;
 }
+	.recipe_form label {
+		font-size:2em;
+		line-height:1.5em;
+	}
+	.recipe_form input, .recipe_form textarea {
+		font-size:1.5em;
+	}
 	.recipe_form p {
 		float:left;
 	}
