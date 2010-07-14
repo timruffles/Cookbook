@@ -1,0 +1,68 @@
+body {
+	background:#DDD;
+}
+/* main */
+#doc2 {
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+#wrap {
+	float:left;
+	width:800px;
+	background:#fff;
+	padding:1em;
+}
+#tabs {
+	float:left;
+	width:100px;
+	padding:2em 0 0 0;margin:0;
+}
+#tabs li {
+	padding:0;margin:0 0 1em 0;
+	height:120px;
+	width:100px;
+	list-style-type:none;
+	background:#fff;
+	display:block;
+	background-repeat:no-repeat;
+	background-position:center center;
+	text-indent:-500em;
+}
+#tabs li a {
+	height:120px;
+	width:110px;
+	display:block;
+}
+#tabs a:hover { 
+	background: none;
+}
+input, textarea {
+	font-size:1.5em;
+}
+.recipe_form label {
+	font-size:2em;
+	line-height:1.5em;
+}
+.recipe_form {
+	overflow:auto;
+}
+	.recipe_form p {
+		float:left;
+	}
+	.recipe_form .steps {
+		clear:left;
+	}
+		.recipe_form .steps textarea {
+			width:20em;
+			height:20em;
+		}
+		.recipe_form .ingredients textarea {
+			width:10em;
+			height:10em;
+		}
+	.recipe_form .ingredients {
+		margin-left:1em;
+	}
+	.recipe_form .submit {
+		clear:left;
+	}

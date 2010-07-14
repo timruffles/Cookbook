@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title><%= stylesheet_link_tag 'yui' %><%= stylesheet_link_tag 'scaffold' %><%= stylesheet_link_tag 'cookbook' %>
+  </head>
+  <body>
+    <div id="doc2" class="yui-t7">
+      <div id="wrap">
+        <div id="hd" role="banner">
+          <h1>
+            <!-- TODO header -->
+          </h1>
+        </div>
+        <div id="bd" role="main">
+          <div class="yui-g">
+            <p style="color: green">
+              <%= notice %>
+            </p><%= yield %>
+          </div>
+        </div>
+        <div id="ft" role="contentinfo">
+          <p>
+            Business Cookbook
+          </p>
+        </div>
+      </div>
+      <ul id="tabs">
+        <% %w[marketing workforce planning legal startup sales].each do |tab| %>
+          <li style="background-image:url(../images/<%=tab%>-tab.png)">
+            <a href="recipes/<%=tab%>"><%=tab%></a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1948 @@
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRecipes (20100714114633)
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ingredients" text, "steps" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100714114633')[0m
+Migrating to CreateCooks (20100714114654)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "cooks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "password" varchar(255), "url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100714114654')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cooks")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("recipes")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-14 13:21:23) [GET]
+
+ActionController::RoutingError (No route matches "/recipe/create" with {:method=>:get}):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 13:21:25) [GET]
+  Parameters: {"id"=>"create"}
+  [4;36;1mRecipe Load (0.1ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Recipe with ID=create):
+  app/controllers/recipes_controller.rb:16:in `show'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:21:50) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (undefined method `name' for #<Recipe:0x23f0438>) on line #6 of app/views/recipes/_form.html.erb:
+3: 
+4:   <p>
+5:     <%= f.label :name %><br />
+6:     <%= f.text_field :name %>
+7:   </p>
+8:   <p>
+9:     <%= f.label :cook_id %><br />
+
+    app/views/recipes/_form.html.erb:6
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (133.6ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRecipes (20100714114633)
+Migrating to CreateCooks (20100714114654)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cooks")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("recipes")[0m
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:22:14) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (undefined method `name' for #<Recipe:0x252d5d0>) on line #6 of app/views/recipes/_form.html.erb:
+3: 
+4:   <p>
+5:     <%= f.label :name %><br />
+6:     <%= f.text_field :name %>
+7:   </p>
+8:   <p>
+9:     <%= f.label :cook_id %><br />
+
+    app/views/recipes/_form.html.erb:6
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (76.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:22:14) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (undefined method `name' for #<Recipe:0x233d34c>) on line #6 of app/views/recipes/_form.html.erb:
+3: 
+4:   <p>
+5:     <%= f.label :name %><br />
+6:     <%= f.text_field :name %>
+7:   </p>
+8:   <p>
+9:     <%= f.label :cook_id %><br />
+
+    app/views/recipes/_form.html.erb:6
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:22:15) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (undefined method `name' for #<Recipe:0x23cb0e8>) on line #6 of app/views/recipes/_form.html.erb:
+3: 
+4:   <p>
+5:     <%= f.label :name %><br />
+6:     <%= f.text_field :name %>
+7:   </p>
+8:   <p>
+9:     <%= f.label :cook_id %><br />
+
+    app/views/recipes/_form.html.erb:6
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (133.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:22:18) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (undefined method `name' for #<Recipe:0x248ad44>) on line #6 of app/views/recipes/_form.html.erb:
+3: 
+4:   <p>
+5:     <%= f.label :name %><br />
+6:     <%= f.text_field :name %>
+7:   </p>
+8:   <p>
+9:     <%= f.label :cook_id %><br />
+
+    app/views/recipes/_form.html.erb:6
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (132.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:22:19) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (undefined method `name' for #<Recipe:0x252de04>) on line #6 of app/views/recipes/_form.html.erb:
+3: 
+4:   <p>
+5:     <%= f.label :name %><br />
+6:     <%= f.text_field :name %>
+7:   </p>
+8:   <p>
+9:     <%= f.label :cook_id %><br />
+
+    app/views/recipes/_form.html.erb:6
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRecipes (20100714114633)
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "ingredients" text, "steps" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100714114633')[0m
+Migrating to CreateCooks (20100714114654)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "cooks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "password" varchar(255), "url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100714114654')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cooks")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("recipes")[0m
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:23:52) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (undefined method `cook_id' for #<Recipe:0x252d5d0>) on line #10 of app/views/recipes/_form.html.erb:
+7:   </p>
+8:   <p>
+9:     <%= f.label :cook_id %><br />
+10:     <%= f.text_field :cook_id %>
+11:   </p>
+12:   <p>
+13:     <%= f.label :ingredients %><br />
+
+    app/views/recipes/_form.html.erb:10
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (76.1ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:23:52) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (undefined method `cook_id' for #<Recipe:0x233aa48>) on line #10 of app/views/recipes/_form.html.erb:
+7:   </p>
+8:   <p>
+9:     <%= f.label :cook_id %><br />
+10:     <%= f.text_field :cook_id %>
+11:   </p>
+12:   <p>
+13:     <%= f.label :ingredients %><br />
+
+    app/views/recipes/_form.html.erb:10
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (65.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:23:53) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (undefined method `cook_id' for #<Recipe:0x23c9c0c>) on line #10 of app/views/recipes/_form.html.erb:
+7:   </p>
+8:   <p>
+9:     <%= f.label :cook_id %><br />
+10:     <%= f.text_field :cook_id %>
+11:   </p>
+12:   <p>
+13:     <%= f.label :ingredients %><br />
+
+    app/views/recipes/_form.html.erb:10
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (138.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:23:54) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (undefined method `cook_id' for #<Recipe:0x2488774>) on line #10 of app/views/recipes/_form.html.erb:
+7:   </p>
+8:   <p>
+9:     <%= f.label :cook_id %><br />
+10:     <%= f.text_field :cook_id %>
+11:   </p>
+12:   <p>
+13:     <%= f.label :ingredients %><br />
+
+    app/views/recipes/_form.html.erb:10
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (133.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRecipes (20100714114633)
+  [4;35;1mSQL (4.1ms)[0m   [0mCREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "cook_id" integer, "ingredients" text, "steps" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100714114633')[0m
+Migrating to CreateCooks (20100714114654)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "cooks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "password" varchar(255), "url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100714114654')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("cooks")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("recipes")[0m
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:25:04) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+Rendered recipes/_form (9.8ms)
+Completed in 41ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:25:21) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+Rendered recipes/_form (7.4ms)
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:34:14) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (Symbol as array index) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `[]'
+    app/helpers/application_helper.rb:11:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (134.0ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:35:43) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (Symbol as array index) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `[]'
+    app/helpers/application_helper.rb:11:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:35:51) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (Symbol as array index) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:12:in `[]'
+    app/helpers/application_helper.rb:12:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:36:11) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (121.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:36:27) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:36:28) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (122.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:36:28) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:36:28) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:36:34) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (126.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:36:35) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:36:55) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (56.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:36:56) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (122.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:36:57) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:38:32) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (stack level too deep) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe, :html => {:class=>'recipe_form'}) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:12:in `old_form_for'
+    app/helpers/application_helper.rb:12:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (56.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:38:40) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (stack level too deep) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe, :html => {:class=>'recipe_form'}) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `old_form_for'
+    app/helpers/application_helper.rb:12:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (126.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:38:41) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (stack level too deep) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe, :html => {:class=>'recipe_form'}) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:9:in `old_form_for'
+    app/helpers/application_helper.rb:12:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:38:41) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (stack level too deep) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe, :html => {:class=>'recipe_form'}) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `old_form_for'
+    app/helpers/application_helper.rb:12:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.6ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:38:41) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (stack level too deep) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe, :html => {:class=>'recipe_form'}) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:9:in `old_form_for'
+    app/helpers/application_helper.rb:12:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (126.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:38:45) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (stack level too deep) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe, :html => {:class=>'recipe_form'}) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `old_form_for'
+    app/helpers/application_helper.rb:12:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:38:46) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (stack level too deep) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe, :html => {:class=>'recipe_form'}) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:9:in `old_form_for'
+    app/helpers/application_helper.rb:12:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (77.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:38:50) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (stack level too deep) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe, :html => {:class=>'recipe_form'}) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `old_form_for'
+    app/helpers/application_helper.rb:12:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:38:56) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+
+ActionView::TemplateError (stack level too deep) on line #1 of app/views/recipes/_form.html.erb:
+1: <% form_for(@recipe, :html => {:class=>'recipe_form'}) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label :name %><br />
+
+    app/helpers/application_helper.rb:11:in `old_form_for'
+    app/helpers/application_helper.rb:12:in `form_for'
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:39:05) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+Rendered recipes/_form (5.9ms)
+Completed in 29ms (View: 21, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:40:09) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+Rendered recipes/_form (6.2ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:40:25) [GET]
+Rendering template within layouts/recipes
+Rendering recipes/new
+Rendered recipes/_form (6.8ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:41:32) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (7.2ms)
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:41:33) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (7.2ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:41:40) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.4ms)
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:41:43) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.8ms)
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:42:02) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (7.1ms)
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:42:09) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.0ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:42:31) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.0ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:42:46) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (8.1ms)
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:42:47) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.8ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:43:01) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.0ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:43:07) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.1ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:43:13) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (7.1ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:43:45) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.0ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:43:53) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.9ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:43:54) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.1ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:44:17) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.8ms)
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:44:53) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (7.4ms)
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:45:19) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.1ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:45:25) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.9ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:45:46) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.3ms)
+Completed in 81ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:46:13) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.8ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:46:17) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.3ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:46:40) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.1ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:47:38) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.0ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:48:04) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.9ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:48:13) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.3ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:48:33) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.9ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:48:52) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.2ms)
+Completed in 79ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:49:03) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.5ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:49:06) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.8ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:49:11) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.6ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:49:45) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.8ms)
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:49:50) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.8ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:53:14) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+
+ActionView::TemplateError (undefined method `value' for #<Recipe:0x23541a0>) on line #9 of app/views/recipes/_form.html.erb:
+6:   </p>
+7:   <p class="steps">
+8:     <%= f.label 'Steps' %><br />
+9:     <%= f.text_area :steps, :value => @recipe.value || "1. List steps with N. format. You can put anything in you like.\n 2. Like a <a href='http://google.com'>html link</a>!" %>
+10:   </p>
+11:   <p class="ingredients">
+12:     <%= f.label :ingredients %><br />
+
+    app/views/recipes/_form.html.erb:9
+    app/views/recipes/_form.html.erb:1
+    app/views/recipes/new.html.erb:3
+    app/controllers/recipes_controller.rb:29:in `new'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.7ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:58:44) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (7.4ms)
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:58:48) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (7.0ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:58:49) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.1ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:58:49) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (72.1ms)
+Completed in 79ms (View: 74, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:58:49) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.4ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:59:02) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (4.9ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:59:24) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.2ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 13:59:30) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.1ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 14:00:13) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.1ms)
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 14:00:14) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (4.9ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 14:00:19) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.3ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 14:00:30) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.2ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 14:00:39) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.3ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 14:00:42) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 14:00:45) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (4.9ms)
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:51:42) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (61.2ms)
+Completed in 86ms (View: 67, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:51:58) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (9.2ms)
+Completed in 24ms (View: 17, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:52:58) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.2ms)
+Completed in 20ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:53:11) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.4ms)
+Completed in 23ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:53:12) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (10.8ms)
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:53:41) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (8.1ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:54:04) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (7.3ms)
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:54:14) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.4ms)
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:54:23) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.4ms)
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:54:59) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.5ms)
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:55:36) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.3ms)
+Completed in 22ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:56:04) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.6ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:56:11) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (7.1ms)
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:56:25) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.4ms)
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:56:55) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.4ms)
+Completed in 23ms (View: 17, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:57:02) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (8.6ms)
+Completed in 22ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:57:13) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.9ms)
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:57:25) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.3ms)
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:57:40) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.8ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:57:41) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.5ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:58:13) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.3ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:58:20) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.3ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:58:34) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.7ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 16:58:42) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.5ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:07:47) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.9ms)
+Completed in 22ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-14 17:07:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/finance-tab.png" with {:method=>:get}):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-14 17:07:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/finance-tab.png" with {:method=>:get}):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:08:05) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.0ms)
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:08:29) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.3ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:08:37) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.6ms)
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:09:03) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.3ms)
+Completed in 21ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:09:29) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (11.3ms)
+Completed in 22ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:09:45) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.7ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:09:52) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.9ms)
+Completed in 21ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:09:53) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (8.0ms)
+Completed in 20ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:09:54) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.6ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:10:00) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.5ms)
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:10:24) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (7.0ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:11:30) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.6ms)
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:11:38) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.6ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:11:53) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (96.6ms)
+Completed in 107ms (View: 100, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:12:29) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (5.8ms)
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:12:29) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (8.5ms)
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#recipes (for 127.0.0.1 at 2010-07-14 17:14:36) [GET]
+  Parameters: {"id"=>"marketing"}
+
+ActionController::UnknownAction (No action responded to recipes. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/timruffles/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:15:40) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (7.4ms)
+Completed in 24ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:16:21) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.5ms)
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:16:23) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.5ms)
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:16:28) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (11.4ms)
+Completed in 20ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-14 17:18:33) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (6.3ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
