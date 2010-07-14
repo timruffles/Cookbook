@@ -3884,3 +3884,10 @@ Completed in 9ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/recipes]
   [4;35;1mSQL (0.3ms)[0m   [0mSELECT * FROM schema_migrations[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT * FROM recipes[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT * FROM chefs[0m
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:14:49) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/recipes]
