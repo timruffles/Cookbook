@@ -3710,3 +3710,18 @@ Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:03:42) [GET]
 Rendering template within layouts/application
 Rendering recipes/index
 Completed in 9ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-14 18:04:23) [GET]
+  [4;36;1mRecipe Load (0.5ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 18:04:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/recipes/2]
