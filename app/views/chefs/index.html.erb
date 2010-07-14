@@ -1,0 +1,24 @@
+<h1>Listing chefs</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Password</th>
+  </tr>
+
+<% @chefs.each do |chef| %>
+  <tr>
+    <td><%=h chef.name %></td>
+    <td><%=h chef.email %></td>
+    <td><%=h chef.password %></td>
+    <td><%= link_to 'Show', chef %></td>
+    <td><%= link_to 'Edit', edit_chef_path(chef) %></td>
+    <td><%= link_to 'Destroy', chef, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New chef', new_chef_path %>
