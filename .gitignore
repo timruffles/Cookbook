@@ -1,2 +1,6 @@
 config/database.yml
 db/*.sqlite3
+public/javascripts/dojo
+public/javascripts/dijit
+public/javascripts/dojox
+public/javascripts/util

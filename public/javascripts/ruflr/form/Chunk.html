@@ -1,0 +1,22 @@
+<div dojoAttachPoint="containerNode">
+	<div dojoAttachPoint="addContent">
+		<form dojoAttachPoint="form">
+			<input type="text" dojoAttachPoint="textInput" name="text"/>
+			<button dojoAttachPoint="submit" style="display:none">Add</button>
+			<div dojoAttachPoint="contentTypeButtons">
+			</div>
+			<div dojoAttachPoint="urlInput" style="opacity:0" >
+				<label for="url">Content url:</label><input type="text" dojoAttachPoint="url" name="url"/>
+				<button dojoAttachPoint="attachBtn">Attach</button>
+			</div>
+			<div dojoAttachPoint="errorDisplay" class="error" style="opacity:0">
+			</div>
+			<div dojoAttachPoint="noticeDisplay" class="notice" style="opacity:0">
+			</div>
+		</form>
+	</div>
+	<div dojoAttachPoint="showContent">
+		<p dojoAttachPoint="urlDisplay"></p>
+		<p dojoAttachPoint="typeDisplay"></p>
+	</div>
+</div>
