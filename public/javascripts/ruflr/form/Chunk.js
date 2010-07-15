@@ -11,7 +11,7 @@ dojo.require('dojo.NodeList-fx');
 	
 		contentTypes:['Text','Video','Image','Audio'],
 		contentType:null,
-		action:'',
+		submitUrl:null,
 		
 		startup:function() {
 			var self = this;
@@ -34,8 +34,8 @@ dojo.require('dojo.NodeList-fx');
 			evt.preventDefault();
 			if(dojox.validate.isUrl(d.attr(this.url,'value'))) {
 				d.xhrPost({
-					form:this.form,
-					action:this.action
+					url:this.submitUrl,
+					form:this.form
 				})
 				.addCallback(d.hitch(this,this._submitted))
 				.addErrback(d.hitch(this,function(){

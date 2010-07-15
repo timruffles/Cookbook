@@ -1,17 +1,23 @@
-<div dojoAttachPoint="containerNode">
+<div dojoAttachPoint="containerNode" class="ruflr-chunk">
 	<div dojoAttachPoint="addContent">
 		<form dojoAttachPoint="form">
-			<input type="text" dojoAttachPoint="textInput" name="text"/>
-			<button dojoAttachPoint="submit" style="display:none">Add</button>
-			<div dojoAttachPoint="contentTypeButtons">
-			</div>
-			<div dojoAttachPoint="urlInput" style="opacity:0" >
-				<label for="url">Content url:</label><input type="text" dojoAttachPoint="url" name="url"/>
-				<button dojoAttachPoint="attachBtn">Attach</button>
-			</div>
+			<p>
+				<input type="text" dojoAttachPoint="textInput" class="content_name" name="text"/>
+				<button dojoAttachPoint="submit" style="display:none" class="btn">Add</button>
+			</p>
+			<p>
+				<div dojoAttachPoint="contentTypeButtons">
+				</div>
+			</p>
+			<p>
+				<div dojoAttachPoint="urlInput" style="opacity:0" >
+					<label for="url">Content url:</label><input type="text" dojoAttachPoint="url" name="url"/>
+					<button dojoAttachPoint="attachBtn">Attach</button>
+				</div>
+			</p>
 			<div dojoAttachPoint="errorDisplay" class="error" style="opacity:0">
 			</div>
-			<div dojoAttachPoint="noticeDisplay" class="notice" style="opacity:0">
+			<div dojoAttachPoint="noticeDisplay" class="success" style="opacity:0">
 			</div>
 		</form>
 	</div>

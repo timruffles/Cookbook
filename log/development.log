@@ -4003,3 +4003,70 @@ Processing RecipesController#show (for 127.0.0.1 at 2010-07-14 23:18:45) [GET]
 Rendering template within layouts/application
 Rendering recipes/show
 Completed in 3391ms (View: 2480, DB: 94) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-15 12:17:32) [GET]
+  [4;35;1mRecipe Load (0.6ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 453ms (View: 317, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-15 12:17:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 369ms (View: 227, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-15 12:17:48) [GET]
+  [4;35;1mRecipe Load (0.5ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-15 12:17:48) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2010-07-15 12:17:49) [GET]
+Rendering template within layouts/application
+Rendering recipes/new
+Rendered recipes/_form (123.2ms)
+Completed in 135ms (View: 125, DB: 0) | 200 OK [http://127.0.0.1/recipes/new]
+
+
+Processing RecipesController#create (for 127.0.0.1 at 2010-07-15 12:18:03) [POST]
+  Parameters: {"commit"=>"Create recipe", "authenticity_token"=>"7Cv/HF2Lg6jJb551dxVRwKVSMQ06JJMnzjH/XFjuuFE=", "recipe"=>{"steps"=>"1. Write some stuff\r\n2. With numbers ", "name"=>"Cool", "ingredients"=>""}}
+  [4;35;1mRecipe Create (58.2ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Cool', NULL, '1. Write some stuff
+2. With numbers ', '2010-07-15 11:18:03', '2010-07-15 11:18:03', '')[0m
+Redirected to http://127.0.0.1:3000/recipes/2
+Completed in 67ms (DB: 58) | 302 Found [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-15 12:18:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/recipes/2]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2010-07-15 12:18:46) [GET]
+  [4;35;1mRecipe Load (0.5ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering template within layouts/application
+Rendering recipes/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://127.0.0.1/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2010-07-15 12:19:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering recipes/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/recipes/1]

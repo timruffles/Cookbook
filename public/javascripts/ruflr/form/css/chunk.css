@@ -1,0 +1,24 @@
+.ruflr-chunk button {
+	background:#375492;
+	border:1px solid;
+	border-color:#4D79D6, #4D79D6, #283E6F, #283E6F;
+	color:#fff;
+}
+.ruflr-chunk button:hover {
+	background:#4569B6;
+	cursor: pointer;
+}
+.ruflr-chunk .error, .ruflr-chunk .success  {
+	margin: 0.5em 0pt; padding: 0.5em;
+}
+.ruflr-chunk .error {
+	background:#F0F0B1;
+	border:1px solid #E9BB22;
+}
+.ruflr-chunk .success {
+	background:#C0EEB5;
+	border:1px solid #55F02E;
+}
+.content_name {
+	width:20em;
+}
