@@ -5,31 +5,38 @@ dojo.require('dojox.validate.web');
 dojo.require('dojo.NodeList-fx');
 (function(d,$) {
 	
+	// TODO - standard way of feeding back from widget
+	
 	dojo.declare("ruflr.form.Chunk", [dijit._Widget, dijit._Templated],{
 	  templateString:  dojo.cache("ruflr.form", "Chunk.html"),
 	  widgetsInTemplate:false,
 	
-		contentTypes:['Text','Video','Image','Audio'],
+		contentTypes:['Blog/Article','Video','Image','Audio','Book'],
 		contentType:null,
 		submitUrl:null,
 		
 		startup:function() {
 			var self = this;
-			this.contentTypes.forEach(function(type) {
-				var button = d.create('button',{innerHTML:type},self.contentTypeButtons);
-			});
-			$('button',this.contentTypeButtons).onclick(dojo.hitch(this,this._contentButtonHandler));
+			// create content radios
+			for(var typeIndex = 0; typeIndex < this.contentTypes.length; typeIndex++) {
+				var id = this.attr('id') + '_ctype_' + typeIndex;
+				var type = this.contentTypes[typeIndex];
+				d.create('input',{type:'radio',name:'content_type',value:type, checked: typeIndex == 0, id: id},self.contentTypeButtons);
+				d.create('label',{innerHTML:type, 'for':id},self.contentTypeButtons);
+			}
+			
+			// create attach button behaviour
 			d.connect(this.attachBtn,'click',dojo.hitch(this,this._attachHandler));
 			['_contentButtonHandler','_attachHandler'].forEach(function(func){
 				d.connect(self,func,d.hitch(self,self._clearMessages));
 			});
 		},
 		
-		_contentButtonHandler:function(evt) {
-			evt.preventDefault();
-			this.contentType = evt.target.innerHTML;
-			$(this.urlInput).fadeIn().play();
-		},
+		// _contentButtonHandler:function(evt) {
+		// 	evt.preventDefault();
+		// 	this.contentType = evt.target.innerHTML;
+		// 	$(this.urlInput).fadeIn().play();
+		// },
 		_attachHandler:function(evt) {
 			evt.preventDefault();
 			if(dojox.validate.isUrl(d.attr(this.url,'value'))) {
@@ -46,7 +53,7 @@ dojo.require('dojo.NodeList-fx');
 			}
 		},
 		_submitted:function() {
-			this._notice('Your upload was successfully created');
+			this._notice('Content saved');
 		},
 		_notice:function(msg) {
 			this._setMessage(this.noticeDisplay,this.errorDisplay,msg);
@@ -64,7 +71,8 @@ dojo.require('dojo.NodeList-fx');
 					},
 					duration:100
 				}).play();
-		}
+		},
+		onSave:function(){}
 		
 		
 	});

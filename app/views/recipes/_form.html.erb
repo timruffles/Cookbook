@@ -1,17 +1,13 @@
 <% form_for(@recipe, :html => {:class=>'recipe_form'}) do |f| %>
   <%= f.error_messages %>
-  <p class="name">
-    <%= f.label :name %><br />
+  <div class="name">
+    <%= f.label 'Recipe name' %><br />
     <%= f.text_field :name %>
-  </p>
-  <p class="steps">
-    <%= f.label 'Steps' %><br />
-    <%= f.text_area :steps %>
-  </p>
-  <p class="ingredients">
-    <%= f.label :ingredients %><br />
-    <%= f.text_area :ingredients %>
-  </p>
+  </div>
+  <div>
+    <%= f.label 'Instructions' %>
+    <div dojoType="ruflr.form.ChunkList"></div>
+  </div>
   <p class="submit">
     <%= f.submit submit_message %>
   </p>

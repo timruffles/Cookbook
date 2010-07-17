@@ -4,6 +4,7 @@
 
 <p>
   <h3>Steps:</h3>
+  <p class="hint">Click once to start a step, again to mark it finished</p>
   <% form_for('step') do |f| %>
     <ul class="recipe_check_list">
       <% @recipe.each_step do |text, number| %>

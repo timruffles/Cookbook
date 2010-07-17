@@ -1,20 +1,28 @@
-<div dojoAttachPoint="containerNode" class="ruflr-chunk">
+<div dojoAttachPoint="containerNode" class="ruflr-chunk dijitReset">
 	<div dojoAttachPoint="addContent">
 		<form dojoAttachPoint="form">
-			<p>
-				<input type="text" dojoAttachPoint="textInput" class="content_name" name="text"/>
-				<button dojoAttachPoint="submit" style="display:none" class="btn">Add</button>
-			</p>
-			<p>
-				<div dojoAttachPoint="contentTypeButtons">
-				</div>
-			</p>
-			<p>
-				<div dojoAttachPoint="urlInput" style="opacity:0" >
-					<label for="url">Content url:</label><input type="text" dojoAttachPoint="url" name="url"/>
-					<button dojoAttachPoint="attachBtn">Attach</button>
-				</div>
-			</p>
+			<div class="dijitReset">
+				<p>
+					<label for="text">Text for the recipe step</label>
+					<input type="text" dojoAttachPoint="textInput" class="content_name" name="text"/>
+					<button dojoAttachPoint="submit" style="display:none" class="btn">Add</button>
+				</p>
+			</div>
+			<div class="dijitReset">
+				<fieldset class="content">
+					<legend>Content</legend>
+					<p>
+						<div dojoAttachPoint="contentTypeButtons">
+						</div>
+					</p>
+					<p>
+						<div dojoAttachPoint="urlInput" >
+							<label for="url">URL:</label><input type="text" dojoAttachPoint="url" name="url"/>
+							<button dojoAttachPoint="attachBtn">Attach</button>
+						</div>
+					</p>
+				</fieldset>
+			</div>
 			<div dojoAttachPoint="errorDisplay" class="error" style="opacity:0">
 			</div>
 			<div dojoAttachPoint="noticeDisplay" class="success" style="opacity:0">
