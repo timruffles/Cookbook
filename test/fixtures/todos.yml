@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  step_id: 
+  user_id: 
+  state: 
+  reminder_date: 2010-07-18
+
+two:
+  step_id: 
+  user_id: 
+  state: 
+  reminder_date: 2010-07-18

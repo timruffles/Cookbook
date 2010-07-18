@@ -1,0 +1,6 @@
+  [4;36;1mStep Create (5.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 13:54:11', '2010-07-18 13:54:11', NULL, NULL)[0m
+  [4;36;1mStep Create (5.8ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 13:54:13', '2010-07-18 13:54:13', NULL, NULL)[0m
+  [4;36;1mStep Create (5.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 13:54:37', '2010-07-18 13:54:37', NULL, NULL)[0m
+  [4;36;1mStep Create (5.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 13:54:39', '2010-07-18 13:54:39', NULL, NULL)[0m
+  [4;36;1mStep Create (11.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 13:59:54', '2010-07-18 13:59:54', NULL, NULL)[0m
+  [4;36;1mStep Create (5.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 13:59:56', '2010-07-18 13:59:56', NULL, NULL)[0m

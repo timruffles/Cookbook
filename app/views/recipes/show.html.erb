@@ -5,10 +5,10 @@
 <p>
   <h3>Steps:</h3>
   <p class="hint">Click once to start a step, again to mark it finished</p>
-  <% form_for('step') do |f| %>
+  <% form_for('steptim') do |f| %>
     <ul class="recipe_check_list">
       <% @recipe.each_step do |text, number| %>
-        <li>
+        <li>sudo !!
           <%= f.check_box "done_#{number}" %>
           <%= f.label "done_#{number}", text %>
         </li>
