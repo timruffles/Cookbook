@@ -4,12 +4,9 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-add_mix:
-  text: Add cake mix
-  recipe: cake
+cake:
+  name: 'A yummy cake'
 # column: value
 #
-bake_cake:
-  text: Bake
-  recipe: cake
+two: {}
 #  column: value

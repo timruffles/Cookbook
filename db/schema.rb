@@ -12,6 +12,7 @@
 ActiveRecord::Schema.define(:version => 20100718104046) do
 
   create_table "chefs", :force => true do |t|
+    t.string   "name"
     t.string   "email",                               :default => "", :null => false
     t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
     t.string   "password_salt",                       :default => "", :null => false
@@ -37,8 +38,6 @@ ActiveRecord::Schema.define(:version => 20100718104046) do
   create_table "recipes", :force => true do |t|
     t.string   "name"
     t.integer  "chef_id"
-    t.text     "ingredients"
-    t.text     "steps"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -46,17 +45,22 @@ ActiveRecord::Schema.define(:version => 20100718104046) do
   create_table "steps", :force => true do |t|
     t.text     "text"
     t.string   "url"
+    t.integer  "recipe_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "todos", :force => true do |t|
+    t.integer  "step_id"
+    t.integer  "user_id"
+    t.integer  "state"
     t.date     "reminder_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
+    t.string   "name"
     t.string   "email",                               :default => "", :null => false
     t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
     t.string   "password_salt",                       :default => "", :null => false
@@ -73,7 +77,6 @@ ActiveRecord::Schema.define(:version => 20100718104046) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "rpx_identifier"
   end
 
   add_index "users", ["confirmation_token"], :name => "index_users_on_confirmation_token", :unique => true

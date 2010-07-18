@@ -13,8 +13,11 @@ class RecipesController < ApplicationController
   # GET /recipes/1
   # GET /recipes/1.xml
   def show
-    @recipe = Recipe.find(params[:id])
+    
+    @recipe = Recipe.find_with_todos(params[:id], user_signed_in? ? current_user[:id] : nil)
 
+ #   @recipe = Recipe.find(params[:id])
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @recipe }
@@ -26,8 +29,6 @@ class RecipesController < ApplicationController
   def new
     
     @recipe = Recipe.new
-    @recipe.steps = "1. List steps with N. format. You can put in anything you like to make your recipe tasty.\n2. Pop in urls and they'll be turned into a clickable link!"
-    @recipe.ingredients = "Pop in suggested resources\nOr other recipes that are prerequisites\nOne per line"
 
     respond_to do |format|
       format.html # new.html.erb

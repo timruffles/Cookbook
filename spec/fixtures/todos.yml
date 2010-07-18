@@ -4,12 +4,11 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-add_mix:
-  text: Add cake mix
-  recipe: cake
+todo_one:
+  user: bill
+  step: add_mix
 # column: value
 #
-bake_cake:
-  text: Bake
-  recipe: cake
-#  column: value
+todo_two:
+  user: bill
+  step: bake_cake

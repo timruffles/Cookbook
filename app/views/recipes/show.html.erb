@@ -5,23 +5,28 @@
 <p>
   <h3>Steps:</h3>
   <p class="hint">Click once to start a step, again to mark it finished</p>
-  <% form_for('steptim') do |f| %>
+  <% form_for @recipe, :url => {:action => :update} do |recipe_form| %> 
     <ul class="recipe_check_list">
-      <% @recipe.each_step do |text, number| %>
-        <li>sudo !!
-          <%= f.check_box "done_#{number}" %>
-          <%= f.label "done_#{number}", text %>
+      <% recipe_form.fields_for :steps do |steps_form| %>
+        <% steps_form.object.todos.build if steps_form.object.todos.empty? %>
+        <li>
+          <% steps_form.fields_for :todos do |f| %>
+            <div dojoType="ruflr.form.TriCheck" todo="step.todos.first.to_json">
+              <%= f.radio_button :state, Todo::UNSTARTED, :checked => f.object.state == nil  %>
+              <%= f.label :state, 'Unstarted'  %>
+              <%= f.radio_button :state, Todo::TODO %>
+              <%= f.label :state, 'Todo' %>
+              <%= f.radio_button :state, Todo::DONE %>
+              <%= f.label :state, 'Done' %>
+            </div>
+          <% end %>
+          <p><%= steps_form.object.text %></p>
         </li>
       <% end %>
     </ul>
+    <%= recipe_form.submit %>
   <% end %>
 </p>
-<!--
-<p>
-  <b>Ingredients:</b>
-  <%=h @recipe.ingredients %>
-</p>
--->
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 <%= link_to 'Back', recipes_path %>

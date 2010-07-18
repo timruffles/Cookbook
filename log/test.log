@@ -4,3 +4,315 @@
   [4;36;1mStep Create (5.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 13:54:39', '2010-07-18 13:54:39', NULL, NULL)[0m
   [4;36;1mStep Create (11.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 13:59:54', '2010-07-18 13:59:54', NULL, NULL)[0m
   [4;36;1mStep Create (5.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 13:59:56', '2010-07-18 13:59:56', NULL, NULL)[0m
+  [4;36;1mStep Create (5.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:11:49', '2010-07-18 14:11:49', NULL, NULL)[0m
+  [4;36;1mStep Create (5.8ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:11:50', '2010-07-18 14:11:50', NULL, NULL)[0m
+  [4;36;1mStep Create (5.7ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:12:53', '2010-07-18 14:12:53', NULL, NULL)[0m
+  [4;36;1mStep Create (5.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:12:54', '2010-07-18 14:12:54', NULL, NULL)[0m
+  [4;36;1mStep Create (5.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:13:36', '2010-07-18 14:13:36', NULL, NULL)[0m
+  [4;36;1mStep Create (5.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:13:38', '2010-07-18 14:13:38', NULL, NULL)[0m
+  [4;36;1mStep Create (5.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:14:10', '2010-07-18 14:14:10', NULL, NULL)[0m
+  [4;36;1mStep Create (5.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:14:12', '2010-07-18 14:14:12', NULL, NULL)[0m
+  [4;36;1mStep Create (5.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:14:59', '2010-07-18 14:14:59', NULL, NULL)[0m
+  [4;35;1mSQL (2.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mStep Create (5.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:15:01', '2010-07-18 14:15:01', NULL, NULL)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mStep Create (5.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:15:17', '2010-07-18 14:15:17', NULL, NULL)[0m
+  [4;36;1mStep Create (5.2ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:15:19', '2010-07-18 14:15:19', NULL, NULL)[0m
+  [4;36;1mStep Create (6.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:15:37', '2010-07-18 14:15:37', NULL, NULL)[0m
+  [4;36;1mStep Create (5.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:15:39', '2010-07-18 14:15:39', NULL, NULL)[0m
+  [4;36;1mStep Create (5.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:16:23', '2010-07-18 14:16:23', NULL, NULL)[0m
+  [4;36;1mStep Create (5.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:16:25', '2010-07-18 14:16:25', NULL, NULL)[0m
+  [4;36;1mStep Create (5.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:18:40', '2010-07-18 14:18:40', NULL, NULL)[0m
+  [4;35;1mSQL (2.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mStep Create (5.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:18:42', '2010-07-18 14:18:42', NULL, NULL)[0m
+  [4;35;1mSQL (2.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mStep Create (6.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:18:48', '2010-07-18 14:18:48', NULL, NULL)[0m
+  [4;36;1mStep Create (5.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:18:49', '2010-07-18 14:18:49', NULL, NULL)[0m
+  [4;36;1mStep Create (5.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:19:02', '2010-07-18 14:19:02', NULL, NULL)[0m
+  [4;36;1mStep Create (5.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:19:04', '2010-07-18 14:19:04', NULL, NULL)[0m
+  [4;36;1mStep Create (5.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:20:50', '2010-07-18 14:20:50', NULL, NULL)[0m
+  [4;36;1mStep Create (6.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:20:51', '2010-07-18 14:20:51', NULL, NULL)[0m
+  [4;36;1mStep Create (6.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:22:41', '2010-07-18 14:22:41', NULL, NULL)[0m
+  [4;36;1mStep Create (5.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:22:43', '2010-07-18 14:22:43', NULL, NULL)[0m
+  [4;36;1mStep Create (5.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:43:59', '2010-07-18 14:43:59', NULL, NULL)[0m
+  [4;36;1mStep Create (5.8ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:44:00', '2010-07-18 14:44:00', NULL, NULL)[0m
+  [4;36;1mStep Create (5.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:45:10', '2010-07-18 14:45:10', NULL, NULL)[0m
+  [4;36;1mStep Create (5.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:45:12', '2010-07-18 14:45:12', NULL, NULL)[0m
+  [4;36;1mStep Create (5.7ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:46:06', '2010-07-18 14:46:06', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.5ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 14:46:06', '2010-07-18 14:46:06', NULL)[0m
+  [4;36;1mStep Create (5.2ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:46:08', '2010-07-18 14:46:08', NULL, NULL)[0m
+  [4;35;1mRecipe Create (7.5ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 14:46:08', '2010-07-18 14:46:08', NULL)[0m
+  [4;36;1mStep Create (6.2ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:47:05', '2010-07-18 14:47:05', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.2ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 14:47:05', '2010-07-18 14:47:05', NULL)[0m
+  [4;36;1mStep Create (6.8ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 14:47:07', '2010-07-18 14:47:07', NULL, NULL)[0m
+  [4;35;1mRecipe Create (7.3ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 14:47:07', '2010-07-18 14:47:07', NULL)[0m
+  [4;36;1mStep Create (6.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:03:05', '2010-07-18 15:03:05', NULL, NULL)[0m
+  [4;35;1mRecipe Create (7.0ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 15:03:05', '2010-07-18 15:03:05', NULL)[0m
+  [4;36;1mStep Create (4.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:03:07', '2010-07-18 15:03:07', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.5ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 15:03:07', '2010-07-18 15:03:07', NULL)[0m
+  [4;36;1mStep Create (5.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:05:32', '2010-07-18 15:05:32', NULL, NULL)[0m
+  [4;35;1mRecipe Create (5.8ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 15:05:32', '2010-07-18 15:05:32', NULL)[0m
+  [4;36;1mStep Create (6.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:05:34', '2010-07-18 15:05:34', NULL, NULL)[0m
+  [4;35;1mRecipe Create (7.7ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 15:05:34', '2010-07-18 15:05:34', NULL)[0m
+  [4;36;1mStep Create (5.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:06:02', '2010-07-18 15:06:02', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.3ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 15:06:02', '2010-07-18 15:06:02', NULL)[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mStep Create (5.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:06:03', '2010-07-18 15:06:03', NULL, NULL)[0m
+  [4;35;1mRecipe Create (5.9ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 15:06:03', '2010-07-18 15:06:03', NULL)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mStep Create (6.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:06:18', '2010-07-18 15:06:18', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.5ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 15:06:18', '2010-07-18 15:06:18', NULL)[0m
+  [4;36;1mStep Create (6.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:06:19', '2010-07-18 15:06:19', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.5ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 15:06:19', '2010-07-18 15:06:19', NULL)[0m
+  [4;36;1mStep Create (5.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:07:07', '2010-07-18 15:07:07', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.5ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 15:07:07', '2010-07-18 15:07:07', NULL)[0m
+  [4;36;1mStep Create (5.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:07:09', '2010-07-18 15:07:09', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.6ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 15:07:09', '2010-07-18 15:07:09', NULL)[0m
+  [4;36;1mStep Create (5.2ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:07:35', '2010-07-18 15:07:35', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.0ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 15:07:35', '2010-07-18 15:07:35', NULL)[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.step_id: SELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:07:37', '2010-07-18 15:07:37', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.3ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "steps", "created_at", "updated_at", "ingredients") VALUES('Recipe one', NULL, NULL, '2010-07-18 15:07:37', '2010-07-18 15:07:37', NULL)[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.step_id: SELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:12:21', '2010-07-18 15:12:21', NULL, NULL)[0m
+  [4;35;1mRecipe Create (7.0ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:12:21', '2010-07-18 15:12:21')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.step_id: SELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.7ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:12:22', '2010-07-18 15:12:22', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.2ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:12:22', '2010-07-18 15:12:22')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.step_id: SELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.2ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:17:17', '2010-07-18 15:17:17', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.2ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:17:17', '2010-07-18 15:17:17')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.step_id: SELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:17:19', '2010-07-18 15:17:19', NULL, NULL)[0m
+  [4;35;1mRecipe Create (5.9ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:17:19', '2010-07-18 15:17:19')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.step_id: SELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (6.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:20:53', '2010-07-18 15:20:53', NULL, NULL)[0m
+  [4;35;1mRecipe Create (7.4ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:20:53', '2010-07-18 15:20:53')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.step_id: SELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (47.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:20:55', '2010-07-18 15:20:55', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.2ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:20:55', '2010-07-18 15:20:55')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.step_id: SELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (4.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:23:15', '2010-07-18 15:23:15', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.6ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:23:15', '2010-07-18 15:23:15')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: steps.recipe_id: SELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "updated_at", "text", "url") VALUES('2010-07-18 15:23:17', '2010-07-18 15:23:17', NULL, NULL)[0m
+  [4;35;1mRecipe Create (7.1ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:23:17', '2010-07-18 15:23:17')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: steps.recipe_id: SELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:25:01', NULL, '2010-07-18 15:25:01', NULL, NULL)[0m
+  [4;35;1mRecipe Create (7.2ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:25:01', '2010-07-18 15:25:01')[0m
+  [4;36;1mRecipe Load (2.4ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:25:03', NULL, '2010-07-18 15:25:03', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.1ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:25:03', '2010-07-18 15:25:03')[0m
+  [4;36;1mRecipe Load (2.2ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:26:03', NULL, '2010-07-18 15:26:03', NULL, NULL)[0m
+  [4;35;1mRecipe Create (7.2ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:26:03', '2010-07-18 15:26:03')[0m
+  [4;36;1mRecipe Load (2.0ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:26:05', NULL, '2010-07-18 15:26:05', NULL, NULL)[0m
+  [4;35;1mRecipe Create (5.7ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:26:05', '2010-07-18 15:26:05')[0m
+  [4;36;1mRecipe Load (2.1ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON steps.recipe_id = recipes.id INNER JOIN "todos" ON todos.step_id = steps.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:33:29', NULL, '2010-07-18 15:33:29', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.4ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:33:29', '2010-07-18 15:33:29')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: s.id: SELECT "recipes".* FROM "recipes" LEFT JOIN todos t ON t.step_id = s.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:33:30', NULL, '2010-07-18 15:33:30', NULL, NULL)[0m
+  [4;35;1mRecipe Create (5.9ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:33:30', '2010-07-18 15:33:30')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: s.id: SELECT "recipes".* FROM "recipes" LEFT JOIN todos t ON t.step_id = s.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.7ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:34:17', NULL, '2010-07-18 15:34:17', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.1ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:34:17', '2010-07-18 15:34:17')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.user_id: SELECT "recipes".* FROM "recipes" LEFT JOIN steps s ON s.recipe_id = recipes.id LEFT JOIN todos t ON t.step_id = s.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (7.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:34:19', NULL, '2010-07-18 15:34:19', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.5ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:34:19', '2010-07-18 15:34:19')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.user_id: SELECT "recipes".* FROM "recipes" LEFT JOIN steps s ON s.recipe_id = recipes.id LEFT JOIN todos t ON t.step_id = s.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (6.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:36:27', NULL, '2010-07-18 15:36:27', NULL, NULL)[0m
+  [4;35;1mRecipe Create (7.3ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:36:27', '2010-07-18 15:36:27')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.user_id: SELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos t ON t.step_id = s.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.2ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:36:29', NULL, '2010-07-18 15:36:29', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.2ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:36:29', '2010-07-18 15:36:29')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.user_id: SELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos t ON t.step_id = s.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.2ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:41:56', NULL, '2010-07-18 15:41:56', NULL, NULL)[0m
+  [4;35;1mRecipe Create (5.9ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:41:56', '2010-07-18 15:41:56')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.user_id: SELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos t ON t.step_id = s.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:41:58', NULL, '2010-07-18 15:41:58', NULL, NULL)[0m
+  [4;35;1mRecipe Create (8.3ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:41:58', '2010-07-18 15:41:58')[0m
+  [4;36;1mRecipe Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: todos.user_id: SELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos t ON t.step_id = s.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (6.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:45:36', NULL, '2010-07-18 15:45:36', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.5ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:45:36', '2010-07-18 15:45:36')[0m
+  [4;36;1mRecipe Load (3.7ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos ON todos.step_id = s.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (5.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:45:38', NULL, '2010-07-18 15:45:38', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.8ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:45:38', '2010-07-18 15:45:38')[0m
+  [4;36;1mRecipe Load (3.6ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos ON todos.step_id = s.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (8.8ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:48:56', NULL, '2010-07-18 15:48:56', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.1ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:48:56', '2010-07-18 15:48:56')[0m
+  [4;36;1mRecipe Load (2.0ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos ON todos.step_id = s.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (6.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:48:58', NULL, '2010-07-18 15:48:58', NULL, NULL)[0m
+  [4;35;1mRecipe Create (6.1ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:48:58', '2010-07-18 15:48:58')[0m
+  [4;36;1mRecipe Load (2.0ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos ON todos.step_id = s.id WHERE ("recipes"."id" = 1 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (8.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:54:28', NULL, '2010-07-18 15:54:28', NULL, NULL)[0m
+  [4;35;1mRecipe Create (7.0ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:54:28', '2010-07-18 15:54:28')[0m
+  [4;36;1mUser Load (2.2ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos ON todos.step_id = s.id WHERE ("recipes"."id" = 975247844 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (6.7ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:54:29', NULL, '2010-07-18 15:54:29', NULL, NULL)[0m
+  [4;35;1mRecipe Create (5.7ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:54:29', '2010-07-18 15:54:29')[0m
+  [4;36;1mUser Load (2.3ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mRecipe Load (1.5ms)[0m   [0mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos ON todos.step_id = s.id WHERE ("recipes"."id" = 975247844 AND ("todos"."user_id" = 1)) [0m
+  [4;36;1mStep Create (8.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:55:17', NULL, '2010-07-18 15:55:17', NULL, NULL)[0m
+  [4;35;1mRecipe Create (5.6ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:55:17', '2010-07-18 15:55:17')[0m
+  [4;36;1mRecipe Load (1.9ms)[0m   [0;1mSELECT * FROM "recipes" LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos ON todos.step_id = s.id WHERE ("recipes"."id" = 298486374 AND ("todos"."user_id" = 975247844)) [0m
+  [4;36;1mStep Create (6.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:55:18', NULL, '2010-07-18 15:55:18', NULL, NULL)[0m
+  [4;35;1mRecipe Create (5.7ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:55:18', '2010-07-18 15:55:18')[0m
+  [4;36;1mRecipe Load (2.0ms)[0m   [0;1mSELECT * FROM "recipes" LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos ON todos.step_id = s.id WHERE ("recipes"."id" = 298486374 AND ("todos"."user_id" = 975247844)) [0m
+  [4;36;1mStep Create (8.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:56:32', NULL, '2010-07-18 15:56:32', NULL, NULL)[0m
+  [4;35;1mRecipe Create (7.5ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:56:32', '2010-07-18 15:56:32')[0m
+  [4;36;1mRecipe Load (2.1ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 975247844) [0m
+  [4;36;1mRecipe Load (0.5ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos ON todos.step_id = s.id WHERE ("recipes"."id" = 974324064 AND ("todos"."user_id" = 975247844)) [0m
+  [4;36;1mStep Create (6.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:56:34', NULL, '2010-07-18 15:56:34', NULL, NULL)[0m
+  [4;35;1mRecipe Create (7.3ms)[0m   [0mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:56:34', '2010-07-18 15:56:34')[0m
+  [4;36;1mRecipe Load (4.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 975247844) [0m
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos ON todos.step_id = s.id WHERE ("recipes"."id" = 974324064 AND ("todos"."user_id" = 975247844)) [0m
+  [4;36;1mRecipe Create (6.7ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:57:40', '2010-07-18 15:57:40')[0m
+  [4;35;1mRecipe Load (1.8ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 975247844) [0m
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos ON todos.step_id = s.id WHERE ("recipes"."id" = 974324064 AND ("todos"."user_id" = 975247844)) [0m
+  [4;36;1mStep Create (6.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:57:40', NULL, '2010-07-18 15:57:40', NULL, NULL)[0m
+  [4;36;1mRecipe Create (8.1ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:58:11', '2010-07-18 15:58:11')[0m
+  [4;35;1mRecipe Load (3.0ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 975247844) [0m
+  [4;35;1mRecipe Load (0.6ms)[0m   [0mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos ON todos.step_id = s.id WHERE ("recipes"."id" = 974324064 AND ("todos"."user_id" = 975247844)) [0m
+  [4;36;1mStep Create (18.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:58:11', NULL, '2010-07-18 15:58:11', NULL, NULL)[0m
+  [4;36;1mRecipe Create (7.8ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:58:24', '2010-07-18 15:58:24')[0m
+  [4;35;1mRecipe Load (1.9ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 975247844) [0m
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id LEFT OUTER JOIN todos ON todos.step_id = s.id WHERE ("recipes"."id" = 974324064 AND ("todos"."user_id" = 975247844)) [0m
+  [4;36;1mStep Create (6.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:58:24', NULL, '2010-07-18 15:58:24', NULL, NULL)[0m
+  [4;36;1mRecipe Create (10.1ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:59:32', '2010-07-18 15:59:32')[0m
+  [4;35;1mRecipe Load (1.8ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (6.9ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:59:32', NULL, '2010-07-18 15:59:32', NULL, NULL)[0m
+  [4;36;1mRecipe Create (8.2ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 15:59:56', '2010-07-18 15:59:56')[0m
+  [4;35;1mRecipe Load (1.9ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" LEFT OUTER JOIN steps s ON s.recipe_id = recipes.id WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (5.6ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 15:59:56', NULL, '2010-07-18 15:59:56', NULL, NULL)[0m
+  [4;36;1mRecipe Create (8.8ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:01:57', '2010-07-18 16:01:57')[0m
+  [4;35;1mRecipe Load (2.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (7.1ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:01:57', NULL, '2010-07-18 16:01:57', NULL, NULL)[0m
+  [4;36;1mRecipe Create (6.6ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:02:21', '2010-07-18 16:02:21')[0m
+  [4;35;1mRecipe Load (1.9ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (6.5ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:02:21', NULL, '2010-07-18 16:02:21', NULL, NULL)[0m
+  [4;36;1mRecipe Create (7.4ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:02:36', '2010-07-18 16:02:36')[0m
+  [4;35;1mRecipe Load (1.9ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (6.6ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:02:36', NULL, '2010-07-18 16:02:36', NULL, NULL)[0m
+  [4;36;1mRecipe Create (8.9ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:05:33', '2010-07-18 16:05:33')[0m
+  [4;35;1mRecipe Load (1.8ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (5.6ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:05:33', NULL, '2010-07-18 16:05:33', NULL, NULL)[0m
+  [4;36;1mRecipe Create (7.0ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:09:13', '2010-07-18 16:09:13')[0m
+  [4;35;1mRecipe Load (2.0ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (7.5ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:09:13', NULL, '2010-07-18 16:09:13', NULL, NULL)[0m
+  [4;36;1mRecipe Create (6.2ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:09:41', '2010-07-18 16:09:41')[0m
+  [4;35;1mRecipe Load (2.1ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (6.1ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:09:41', NULL, '2010-07-18 16:09:41', NULL, NULL)[0m
+  [4;36;1mRecipe Create (8.3ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:11:49', '2010-07-18 16:11:49')[0m
+  [4;35;1mRecipe Load (1.8ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (5.5ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:11:49', NULL, '2010-07-18 16:11:49', NULL, NULL)[0m
+  [4;36;1mRecipe Create (7.8ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:12:01', '2010-07-18 16:12:01')[0m
+  [4;35;1mRecipe Load (1.7ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.5ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (5.8ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:12:01', NULL, '2010-07-18 16:12:01', NULL, NULL)[0m
+  [4;36;1mRecipe Create (10.8ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:15:29', '2010-07-18 16:15:29')[0m
+  [4;35;1mRecipe Load (3.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (5.8ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:15:29', NULL, '2010-07-18 16:15:29', NULL, NULL)[0m
+  [4;36;1mRecipe Create (7.9ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:17:24', '2010-07-18 16:17:24')[0m
+  [4;35;1mRecipe Load (1.7ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (6.9ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:17:24', NULL, '2010-07-18 16:17:24', NULL, NULL)[0m
+  [4;36;1mRecipe Create (13.6ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:17:42', '2010-07-18 16:17:42')[0m
+  [4;35;1mRecipe Load (3.8ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mStep Create (9.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:17:42', NULL, '2010-07-18 16:17:42', NULL, NULL)[0m
+  [4;35;1mSQL (4.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mRecipe Create (7.5ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:18:00', '2010-07-18 16:18:00')[0m
+  [4;35;1mRecipe Load (1.8ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (5.9ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:18:00', NULL, '2010-07-18 16:18:00', NULL, NULL)[0m
+  [4;36;1mRecipe Create (6.4ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:18:12', '2010-07-18 16:18:12')[0m
+  [4;35;1mRecipe Load (2.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mStep Create (5.7ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:18:12', NULL, '2010-07-18 16:18:12', NULL, NULL)[0m
+  [4;36;1mRecipe Create (14.3ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:18:22', '2010-07-18 16:18:22')[0m
+  [4;35;1mRecipe Load (3.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.5ms)[0m   [0;1mSELECT "recipes".* FROM "recipes" INNER JOIN "steps" ON ("recipes"."id" = "steps"."recipe_id") INNER JOIN "todos" ON ("todos"."step_id" = "steps"."id") WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (5.7ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:18:22', NULL, '2010-07-18 16:18:22', NULL, NULL)[0m
+  [4;36;1mRecipe Create (8.5ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:18:34', '2010-07-18 16:18:34')[0m
+  [4;35;1mRecipe Load (1.9ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (6.2ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:18:34', NULL, '2010-07-18 16:18:34', NULL, NULL)[0m
+  [4;36;1mRecipe Create (9.4ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:53:47', '2010-07-18 16:53:47')[0m
+  [4;35;1mRecipe Load (2.3ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (5.7ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:53:47', NULL, '2010-07-18 16:53:47', NULL, NULL)[0m
+  [4;36;1mRecipe Create (8.4ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:58:04', '2010-07-18 16:58:04')[0m
+  [4;35;1mRecipe Load (2.1ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (5.9ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:58:05', NULL, '2010-07-18 16:58:05', NULL, NULL)[0m
+  [4;36;1mRecipe Create (7.1ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:58:33', '2010-07-18 16:58:33')[0m
+  [4;35;1mRecipe Load (2.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (5.7ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:58:33', NULL, '2010-07-18 16:58:33', NULL, NULL)[0m
+  [4;36;1mRecipe Create (6.0ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:58:49', '2010-07-18 16:58:49')[0m
+  [4;35;1mRecipe Load (1.8ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (6.3ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:58:49', NULL, '2010-07-18 16:58:49', NULL, NULL)[0m
+  [4;36;1mRecipe Create (9.1ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:59:06', '2010-07-18 16:59:06')[0m
+  [4;35;1mRecipe Load (1.8ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (6.0ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:59:06', NULL, '2010-07-18 16:59:06', NULL, NULL)[0m
+  [4;36;1mRecipe Load (3.6ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mStep Create (5.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:59:23', NULL, '2010-07-18 16:59:23', NULL, NULL)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mRecipe Create (9.4ms)[0m   [0;1mINSERT INTO "recipes" ("name", "chef_id", "created_at", "updated_at") VALUES('Recipe one', NULL, '2010-07-18 16:59:42', '2010-07-18 16:59:42')[0m
+  [4;35;1mRecipe Load (2.1ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 974324064) [0m
+  [4;35;1mStep Create (5.8ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-18 16:59:42', NULL, '2010-07-18 16:59:42', NULL, NULL)[0m
