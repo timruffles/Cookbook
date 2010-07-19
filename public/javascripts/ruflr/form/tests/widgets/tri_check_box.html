@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Test ruflr.form.TriCheckBox</title>
+        <script type="text/javascript" src="../../../../dojo/dojo.js"
+        djConfig="isDebug: true, parseOnLoad: true"></script>
+        <script type="text/javascript">
+		  dojo.require('ruflr.form.TriCheckBox');
+			dojo.addOnLoad(function(){
+						  dijit.byId('sut').attr('submitUrl',new dojo._Url(document.baseURI,dojo.moduleUrl('ruflr','form/tests/widgets/test.php').uri).uri);
+			});
+
+        </script>
+<link rel="stylesheet" href="../../css/chunk.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+    </head>
+    <body>
+
+        <div id="sut" dojoType="ruflr.form.TriCheckBox">
+
+        </div>
+
+    </body>
+</html>

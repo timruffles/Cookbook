@@ -11,7 +11,7 @@
         <% steps_form.object.todos.build if steps_form.object.todos.empty? %>
         <li>
           <% steps_form.fields_for :todos do |f| %>
-            <div dojoType="ruflr.form.TriCheck" todo="step.todos.first.to_json">
+            <div dojoType="ruflr.form.TriCheck" state="f.object.state">
               <%= f.radio_button :state, Todo::UNSTARTED, :checked => f.object.state == nil  %>
               <%= f.label :state, 'Unstarted'  %>
               <%= f.radio_button :state, Todo::TODO %>
