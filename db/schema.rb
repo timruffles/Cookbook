@@ -13,6 +13,11 @@ ActiveRecord::Schema.define(:version => 20100718104046) do
 
   create_table "chefs", :force => true do |t|
     t.string   "name"
+    t.text     "profile"
+    t.string   "website"
+    t.string   "twitter"
+    t.string   "linkedin"
+    t.string   "facebook"
     t.string   "email",                               :default => "", :null => false
     t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
     t.string   "password_salt",                       :default => "", :null => false

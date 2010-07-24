@@ -1,0 +1,11 @@
+%div.recipe stats
+	%h3 Top 5 recipes
+	%ul.recipe_stats
+		= partial :collection => @recipes, :template => 'recipe_stat'
+%div.recipe charts
+	%h3 Your inbound links
+	%button Register another link
+%div.recipe comments
+	%ul.comments
+		= partial :collection => @comments, :template => 'recipe/comment'
+= link_to "Write a recipe", chef_new_recipe_path

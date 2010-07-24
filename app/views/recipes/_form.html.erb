@@ -1,14 +1,10 @@
-<% form_for(@recipe, :html => {:class=>'recipe_form'}) do |f| %>
-  <%= f.error_messages %>
-  <div class="name">
-    <%= f.label 'Recipe name' %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div>
-    <%= f.label 'Instructions' %>
-    <%= f.text_area :steps %>
-  </div>
-  <p class="submit">
-    <%= f.submit submit_message %>
-  </p>
-<% end %>
+= form_for(@recipe, :html = {:class='recipe_form'}) do |f|
+  = f.error_messages
+  %div class="name"
+    = f.label 'Recipe name' 
+    = f.text_field :name 
+  %div
+    = f.label 'Instructions' 
+    = f.text_area :steps 
+  %p class="submit"
+    = f.submit submit_message

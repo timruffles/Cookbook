@@ -14,7 +14,7 @@ class RecipesController < ApplicationController
   # GET /recipes/1.xml
   def show
     
-    @recipe = Recipe.find_with_todos(params[:id], user_signed_in? ? current_user[:id] : nil)
+    @recipe = Recipe.with_chef.with_todos_for(user_signed_in? ? current_user : nil).find(params[:id])
 
  #   @recipe = Recipe.find(params[:id])
     

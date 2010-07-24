@@ -5,6 +5,11 @@ class Recipe < ActiveRecord::Base
   
   accepts_nested_attributes_for :steps
   
+  named_scope :with_chef, :include => :chef
+  named_scope :with_todos_for, lambda {|user|
+    user ? {:include => {:steps => :todos}, :conditions => {:todos => {:user_id => user.id}}} :
+           {:include => :steps}
+  }
   
   alias :old_initialize :initialize
   
@@ -16,13 +21,6 @@ class Recipe < ActiveRecord::Base
     if step_str
       self.steps = Step.parse(step_str)
     end
-  end
-  
-  def self.find_with_todos(id, user_id = nil)
-#    query_hash = {:include => :steps}
-    query_hash = {:include => :steps}
-#    query_hash.deep_merge!({:include => {:steps => :todos}, :conditions => {:todos => {:user_id => user_id}}}) if user_id
-    Recipe.find id, query_hash
   end
   
   

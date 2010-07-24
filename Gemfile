@@ -6,6 +6,11 @@ gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 gem 'warden'
 gem 'devise', '1.0.7'
 
+
+# markup
+gem 'haml'
+
+# testing
 gem 'rspec', '1.3.0'
 gem 'rspec-rails', '1.3.2'
 
