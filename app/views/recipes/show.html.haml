@@ -1,23 +1,6 @@
 %h2
   = h @recipe.name
-%p
-  %h3 Steps:
-  %p.hint Click once to start a step, again to mark it finished
-  - form_for @recipe, :url => {:action => :update} do |recipe_form|
-    %ul.recipe_check_list
-      - recipe_form.fields_for :steps do |steps_form|
-        - steps_form.object.todos.build if steps_form.object.todos.empty?
-        %li
-          - steps_form.fields_for :todos do |f|
-            %div{:dojoType => "ruflr.form.TriCheck", :state => "f.object.state"}
-              = f.radio_button :state, Todo::UNSTARTED, :checked => f.object.state == nil
-              = f.label :state, 'Unstarted'
-              = f.radio_button :state, Todo::TODO
-              = f.label :state, 'Todo'
-              = f.radio_button :state, Todo::DONE
-              = f.label :state, 'Done'
-          %p= steps_form.object.text
-    = recipe_form.submit
+
 = link_to 'Edit', edit_recipe_path(@recipe)
 |
 \#{link_to 'Back', recipes_path}

@@ -5,7 +5,9 @@ class Recipe < ActiveRecord::Base
   
   accepts_nested_attributes_for :steps
   
-  named_scope :with_chef, :include => :chef
+  default_scope :include => [{:chef => :recipes}, :steps]
+  
+  named_scope :with_chefs_recipes, :include => :chef
   named_scope :with_todos_for, lambda {|user|
     user ? {:include => {:steps => :todos}, :conditions => {:todos => {:user_id => user.id}}} :
            {:include => :steps}

@@ -1,0 +1,7 @@
+%h3 Featured recipe:
+= render :partial => 'recipes/recipe', :locals => {:recipe => @featured}
+
+= link_to 'Create a recipe', new_recipe_path 
+
+- content_for :chef do 
+  = render :partial => 'chef/side', :locals => {:chef => @featured.chef}

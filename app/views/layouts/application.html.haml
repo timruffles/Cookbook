@@ -1,0 +1,34 @@
+!!! Strict
+%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}/
+    %title
+    = stylesheet_link_tag 'yui'
+    = stylesheet_link_tag 'scaffold'
+    = stylesheet_link_tag '../javascripts/dijit/themes/dijit.css'
+    = stylesheet_link_tag 'cookbook'
+    %script{:djConfig => "parseOnLoad:true,baseUrl: '/javascripts/',modulePaths: { ruflr: 'ruflr' }", :src => "http://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js", :type => "text/javascript"}
+    / <haml:loud> javascript_include_tag 'dojo/dojo.js', :djConfig =&gt; 'parseOnLoad:true' </haml:loud>
+  %body
+    #doc2.yui-t7
+      #wrap.yui-ge
+        %div.yui-u.first
+          #book
+            #hd{:role => "banner"}
+              %a#bookmark Bookmark
+              %div.content
+                %h1#title The Business Cookbook
+                %h2#tag_line Recipies for success
+                =render :partial => 'layouts/notices'
+                =render :partial => 'user/signin'
+            #bd{:role => "main"}
+              %div.content
+                = yield
+                #ft{:role => "contentinfo"}
+                  %p
+                    Business Cookbook
+        %div.yui-u
+          #chef
+            = yield :chef
+    -['bookmark','bookmark-checked','bookmark-hover'].each do |img|
+      %div{:class=>'preload',:style=>"background-url(../images/#{img}.png)"}

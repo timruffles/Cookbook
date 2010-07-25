@@ -5,8 +5,14 @@ class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :http_authenticatable, :token_authenticatable, :confirmable, :lockable, :timeoutable and :activatable
   devise :registerable, :authenticatable, :recoverable,
-         :rememberable, :trackable, :validatable, :rpx_connectable
+         :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation
+  
+  # remove all lazily created users
+  def clean_up_lazy_creations
+    
+  end
+  
 end

@@ -1,0 +1,25 @@
+%h3 What do you want to cook up for your business?
+- form_for('search') do |f| 
+  = f.text_field :q 
+  = f.submit 'Go' 
+%h3 Recent recipes:
+%ul#recipes_list.stream
+  - @recipes.each do |recipe| 
+    %li
+      %h4= link_to recipe.name, recipe 
+%h3 Featured chefs:
+%ul#chef_list.stream
+  - [{:name => 'Crooks r us', :recipes => 120, :popularity => 47}, {:name => 'J A Arthurpa', :recipies => 86, :popularity => 24}].each do |chef| 
+    %li
+      %h4= chef[:name] 
+      %p 
+        Recipes
+        =chef[:recipes] 
+      %p
+        Popularity
+        =chef[:popularity] 
+
+= link_to 'Create a recipe', new_recipe_path 
+
+- content_for :chef do 
+  =partial @featured.chef :template => 'chef/side'

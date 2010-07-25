@@ -13,6 +13,7 @@ gem 'haml'
 # testing
 gem 'rspec', '1.3.0'
 gem 'rspec-rails', '1.3.2'
+gem 'factory_girl'
 
 gem 'ZenTest'
 gem 'autotest-rails'

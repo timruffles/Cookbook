@@ -1,12 +1,8 @@
-<div id="search" <% if @q %>class="searched"<% end %>>
-  <% unless @q %>
-	<div class="prompt">
-		What do you want to do? <span class="hint">Search by: title / topic / chef.</span>
-	</div>
-  <% else %>
-  <% end %>
-  <% form_tag({:controller => 'events', :action => 'search'}, {:method =>'get'}) do  %>
-    <%= text_field_tag :q, @q || '' %>
-	<button class="large-b scheme-2 awesome" type="submit">Find recipies</button>
-  <% end %>
-</div>
+%div#search
+  - unless @q
+    %div.prompt
+      What do you want to cook up for your business?
+      %span.hint Search by: title / topic / chef.
+  - form_for(:search, :method => :get) do
+    = text_field_tag :q, @q || ''
+    %button.large-b.scheme-2.awesome{:type => "submit"} Find recipes

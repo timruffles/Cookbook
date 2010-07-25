@@ -1,12 +1,21 @@
 body {
-	background:#424B91;
+	font-family:tahoma;
+}
+#title {
+	font-family:'Bakerville', 'Georgia';
+	font-size:3em;
+	padding-top:1em;
+	margin-bottom:0;
+}
+div > h1, div > h2 {
+	margin-top:0;
+}
+#tag_line {
+	color:#F70707;
+	margin-top:0;
 }
 h1, h2, h3, h4, h5 {
 	font-weight:normal;
-}
-h1 {
-	font-size:2em;
-	margin-top:0;
 }
 h2 {
 	font-size:1.75em;
@@ -17,39 +26,48 @@ h3 {
 h4 {
 	font-size:1.25em;
 }
+#hd {
+	position:relative;
+}
+#bookmark {
+	position:absolute;
+	top:-1px;
+	display:block;
+	width:68px;
+	height:175px;
+	text-indent:-500em;
+	background-image:url(../images/bookmark.png);
+	background-repeat:no-repeat;
+}
+#bookmark:hover {
+	background-image:url(../images/bookmark-hover.png);
+}
+#bookmark.checked {
+	background-image:url(../images/bookmark-checked.png);
+}
 /* main */
 #doc2 {
 	overflow:hidden;
 }
 #wrap {
-	float:left;
-	width:800px;
-	background:#fff;
-	padding:1em;
-	border:4px solid #ddd;
+	border:1px solid #ddd;
+	overflow-x:auto;
+	overflow-y:hidden;
 }
-	#content {
-		min-height:750px;
+#book {
+	background:#fff;
+	border-right:4px solid #ddd;
+}
+#book, #chef {
+	padding:0 2.5%;
+}
+	.content {
+		margin-left:18%;
 	}
 /* common page elements */
-#tabs {
-	float:left;
-	width:100px;
-	padding:2em 0 0 0;margin:0;
+#chef {
+	padding-top:3em;
 }
-	#tabs li {
-		padding:0 0 0 0.5em;margin:0 0 1em 0;
-		height:120px;
-		width:100px;
-		list-style-type:none;
-		background:#fff;
-		display:block;
-		background-repeat:no-repeat;
-		background-position:center center;
-	}
-	#tabs li a {
-	}
-/* forms */
 
 /* search */
 #search_q {
@@ -94,7 +112,16 @@ h4 {
 		line-height:1.75em;
 		list-style-type:none;
 	}
-
+/* Chef
+************************/
+.biog {
+	overflow:auto;
+}
+	.profile {
+		float:right;
+		height:80px;
+		border:1px solid #ddd;
+	}
 
 /* Awesome buttons
 ************************/
@@ -145,4 +172,11 @@ h4 {
 
 button {
 	border:0 none;
+}
+
+.preload {
+	width:0px;
+	height:0px;
+	margin:0;
+	padding:0;
 }

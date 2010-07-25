@@ -11,35 +11,6 @@
 
 ActiveRecord::Schema.define(:version => 20100718104046) do
 
-  create_table "chefs", :force => true do |t|
-    t.string   "name"
-    t.text     "profile"
-    t.string   "website"
-    t.string   "twitter"
-    t.string   "linkedin"
-    t.string   "facebook"
-    t.string   "email",                               :default => "", :null => false
-    t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
-    t.string   "password_salt",                       :default => "", :null => false
-    t.string   "confirmation_token"
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
-    t.string   "reset_password_token"
-    t.string   "remember_token"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",                       :default => 0
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "chefs", ["confirmation_token"], :name => "index_chefs_on_confirmation_token", :unique => true
-  add_index "chefs", ["email"], :name => "index_chefs_on_email", :unique => true
-  add_index "chefs", ["reset_password_token"], :name => "index_chefs_on_reset_password_token", :unique => true
-
   create_table "recipes", :force => true do |t|
     t.string   "name"
     t.integer  "chef_id"
@@ -58,20 +29,50 @@ ActiveRecord::Schema.define(:version => 20100718104046) do
   create_table "todos", :force => true do |t|
     t.integer  "step_id"
     t.integer  "user_id"
-    t.integer  "state"
+    t.integer  "completed_date"
     t.date     "reminder_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "users", :force => true do |t|
+  
+  create_table "chefs", :force => true do |t|
+    
     t.string   "name"
+    t.string   "tag_line"
+    t.text     "profile"
+    t.string   "profile_img"
+    t.string   "website"
+    t.string   "twitter"
+    t.string   "linkedin"
+    t.string   "facebook"
+    
     t.string   "email",                               :default => "", :null => false
     t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
     t.string   "password_salt",                       :default => "", :null => false
-    t.string   "confirmation_token"
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
+    t.string   "reset_password_token"
+    t.string   "remember_token"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",                       :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "chefs", ["confirmation_token"], :name => "index_chefs_on_confirmation_token", :unique => true
+  add_index "chefs", ["email"], :name => "index_chefs_on_email", :unique => true
+  add_index "chefs", ["reset_password_token"], :name => "index_chefs_on_reset_password_token", :unique => true
+
+  create_table "users", :force => true do |t|
+    
+    t.string   "name"
+    t.date     "lazily_registered_date"
+    
+    t.string   "email",                               :default => "", :null => false
+    t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
+    t.string   "password_salt",                       :default => "", :null => false
     t.string   "reset_password_token"
     t.string   "remember_token"
     t.datetime "remember_created_at"

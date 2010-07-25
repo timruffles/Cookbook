@@ -1,0 +1,11 @@
+%p.hint Click once to start a step, again to mark it finished
+- form_for recipe, :url => {:action => :update} do |recipe_form|
+  %ul.recipe_check_list
+    - recipe_form.fields_for :steps do |steps_form|
+      - steps_form.object.todos.create :user => current_user  if steps_form.object.todos.empty?
+      %li
+        - steps_form.fields_for :todos do |f|
+          %div{:state => "f.object.state"}
+            = f.check_box :completed, :checked => f.object.completed_date != nil
+        %p= steps_form.object.text
+  = recipe_form.submit
