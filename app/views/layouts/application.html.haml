@@ -15,12 +15,7 @@
         %div.yui-u.first
           #book
             #hd{:role => "banner"}
-              %a#bookmark Bookmark
-              %div.content
-                %h1#title The Business Cookbook
-                %h2#tag_line Recipies for success
-                =render :partial => 'layouts/notices'
-                =render :partial => 'user/signin'
+              = yield :header
             #bd{:role => "main"}
               %div.content
                 = yield

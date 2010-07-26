@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'spork'
 
+ENV["RAILS_ENV"] = 'test'
+
 Spork.prefork do
   # Loading more in this block will cause your tests to run faster. However, 
   # if you change any configuration or code from libraries loaded here, you'll
@@ -9,7 +11,6 @@ Spork.prefork do
   
   # This file is copied to ~/spec when you run 'ruby script/generate rspec'
   # from the project root directory.
-  ENV["RAILS_ENV"] ||= 'test'
   require File.expand_path(File.join(File.dirname(__FILE__),'..','config','environment'))
   require 'spec/autorun'
   require 'spec/rails'
@@ -49,7 +50,8 @@ Spec::Runner.configure do |config|
   config.use_instantiated_fixtures  = false
   config.fixture_path = RAILS_ROOT + '/spec/fixtures/'
   
-  config.global_fixtures = :recipes, :steps, :todos, :users
+  # NEVER put global fixtures in, it'll FK up testing as they'll be cached
+  
 
   # == Fixtures
   #

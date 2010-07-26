@@ -8,5 +8,9 @@ cake:
   name: 'A yummy cake'
 # column: value
 #
-two: {}
+brownie:
+  name: Brownie
+  
+onion_pie:
+  name: Onion pie
 #  column: value

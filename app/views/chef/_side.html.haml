@@ -1,5 +1,9 @@
 %div.biog
   %h2= chef.name
+  =image_tag(chef.profile_img, :class => 'profile_img')
   %p= chef.tag_line
-  %img{:src => chef.profile_img}
+%div
+  %h4= "#{chef.name.split(' ').first}'s recipes"
+  - chef.recipes.each do |recipe|
+    = link_to recipe.name, recipe
   

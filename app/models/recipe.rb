@@ -5,25 +5,19 @@ class Recipe < ActiveRecord::Base
   
   accepts_nested_attributes_for :steps
   
-  default_scope :include => [{:chef => :recipes}, :steps]
+  default_scope :include => [:chef, :steps]
   
-  named_scope :with_chefs_recipes, :include => :chef
+  named_scope :with_chefs_recipes, :include => {:chef => :recipes}
   named_scope :with_todos_for, lambda {|user|
-    user ? {:include => {:steps => :todos}, :conditions => {:todos => {:user_id => user.id}}} :
-           {:include => :steps}
+    user ? {:joins => sprintf('LEFT OUTER JOIN steps ON recipes.id = steps.recipe_id LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = %d', user.id)} : {}
   }
   
-  alias :old_initialize :initialize
-  
-  ## alert! this doesn't work with some stuff like find_or_create as initialize is never called :(
-  ## this cost me an afternoon of tracking down fking rails magic
-  def initialize params = nil
-    step_str = params.delete(:steps) if params && String === params[:steps]
-    old_initialize(params)
-    if step_str
-      self.steps = Step.parse(step_str)
-    end
+  def steps_as_text= text
+    self.steps = Step.from_text(text)
   end
   
+  def steps_as_text
+    Step.to_text(self.steps)
+  end
   
 end

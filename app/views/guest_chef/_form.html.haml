@@ -1,0 +1,30 @@
+- form_for(@chef, :html => {:class => 'recipe_form'}) do |f|
+  = f.error_messages
+  
+  %h3 Chef
+  %div
+    = f.label 'Chef name' 
+    = f.text_field :name
+  %div
+    = f.label 'Tag line' 
+    = f.text_field :tag_line
+  %div
+    = f.label 'Profile' 
+    = f.text_area :profile
+  %div
+    = f.label 'URL for profile image' 
+    = f.text_field :profile_img
+  
+  - f.fields_for :recipe do |f|
+    %h3 Recipe
+    %div.name
+      = f.label 'Recipe name' 
+      = f.text_field :name
+    %div.description
+      = f.label 'Recipe description' 
+      = #f.text_field :tag_line
+    %div
+      = f.label 'Instructions' 
+      = f.text_area :steps_as_text
+    %p.submit
+      = f.submit submit_message

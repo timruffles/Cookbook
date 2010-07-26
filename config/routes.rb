@@ -1,12 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
   
-  map.devise_for :chefs
   map.devise_for :users
+  map.devise_for :chefs
 
   map.resources :recipes
+  map.resources :chefs
 
   map.root :controller => "home"
   
+  map.resources :guest_chef
 
   # The priority is based upon order of creation: first created -> highest priority.
 

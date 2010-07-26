@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
     # unregistered users to use the app
     def lazy_registration
       unless user_signed_in? || chef_signed_in?
-        user = User.create :lazily_registered_date => Time.now, :password => 'password', :password_confirmation => 'password', :email => "tim#{rand(999)}@timmy.com"
+        user = User.create :lazily_registered_date => Time.now, :password => 'password', :password_confirmation => 'password', :email => "lazy#{rand(9999)}@lazy#{rand(9999)}.com"
         sign_in(user)
       end
     end

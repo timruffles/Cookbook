@@ -1,6 +1,16 @@
-%h2
-  = h @recipe.name
+-content_for :header do
+  %a#bookmark Bookmark
+  %div.content
+    %h1#title=@recipe.name
+    %h2#tag_line= @recipe.chef.name
+    =render :partial => 'layouts/notices'
+    =render :partial => 'user/signin'
+
+    =render :partial => 'checklist', :locals => {:recipe => @recipe}
 
 = link_to 'Edit', edit_recipe_path(@recipe)
 |
 \#{link_to 'Back', recipes_path}
+
+- content_for :chef do 
+  = render :partial => 'chef/side', :locals => {:chef => @recipe.chef}

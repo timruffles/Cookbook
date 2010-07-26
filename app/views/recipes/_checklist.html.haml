@@ -1,0 +1,11 @@
+%p.hint Click once to mark it finished
+- form_for recipe, :url => {:action => :update} do |recipe_form|
+  %ul.recipe_check_list
+    - recipe_form.fields_for :steps do |steps_form|
+      - step = steps_form.object
+      - step.todos.create :user => current_user  if step.todos.empty?
+      %li
+        - steps_form.fields_for :todos do |f|
+          %div{:state => "f.object.state"}
+            = f.check_box :completed, :checked => f.object.completed_date != nil, :id => "step_#{steps_form.object.id}"
+            = label_tag("step_#{steps_form.object.id}", step.url != '' ? link_to(step.text, step.url) : step.text)

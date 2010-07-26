@@ -13,6 +13,7 @@ ActiveRecord::Schema.define(:version => 20100718104046) do
 
   create_table "recipes", :force => true do |t|
     t.string   "name"
+    t.string   "tag_line"
     t.integer  "chef_id"
     t.datetime "created_at"
     t.datetime "updated_at"
