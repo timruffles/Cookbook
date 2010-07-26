@@ -62,7 +62,6 @@ ActiveRecord::Schema.define(:version => 20100718104046) do
     t.datetime "updated_at"
   end
 
-  add_index "chefs", ["confirmation_token"], :name => "index_chefs_on_confirmation_token", :unique => true
   add_index "chefs", ["email"], :name => "index_chefs_on_email", :unique => true
   add_index "chefs", ["reset_password_token"], :name => "index_chefs_on_reset_password_token", :unique => true
 
@@ -86,7 +85,6 @@ ActiveRecord::Schema.define(:version => 20100718104046) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["confirmation_token"], :name => "index_users_on_confirmation_token", :unique => true
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
