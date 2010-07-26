@@ -1,4 +1,4 @@
-- form_for(@chef, :html => {:class => 'recipe_form'}) do |f|
+- form_for(@chef, :html => {:class => 'recipe_form'}, :url => guest_chefs_path) do |f|
   = f.error_messages
   
   %h3 Chef
@@ -10,12 +10,12 @@
     = f.text_field :tag_line
   %div
     = f.label 'Profile' 
-    = f.text_area :profile
+    = f.text_area :profile, :rows => 8
   %div
     = f.label 'URL for profile image' 
     = f.text_field :profile_img
   
-  - f.fields_for :recipe do |f|
+  - f.fields_for :recipes do |f|
     %h3 Recipe
     %div.name
       = f.label 'Recipe name' 
@@ -25,6 +25,6 @@
       = #f.text_field :tag_line
     %div
       = f.label 'Instructions' 
-      = f.text_area :steps_as_text
+      = f.text_area :steps_as_text, :rows => 8
     %p.submit
       = f.submit submit_message

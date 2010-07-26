@@ -1,6 +1,10 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
   
+  def header title, tagline = nil
+    render :partial => 'layouts/header', :locals => {:title => title, :tag_line => tagline}
+  end
+  
   def recent_records model, count
     clazz = model.to_s.classify.constantize
     records = clazz.all(:order => 'created_at DESC', :limit => count)

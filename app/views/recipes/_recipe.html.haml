@@ -2,4 +2,4 @@
   %h3
     %a{:href => recipe_path(recipe)}
       =recipe.name
-      = render :partial => 'checklist', :locals => {:recipe => recipe}
+  = render :partial => 'recipes/checklist', :locals => {:recipe => recipe}

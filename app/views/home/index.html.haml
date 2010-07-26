@@ -1,16 +1,10 @@
--content_for :header do
-  %a#bookmark Bookmark
-  %div.content
-    %h1#title The Business Cookbook
-    %h2#tag_line Recipes for success
-    =render :partial => 'layouts/notices'
-    =render :partial => 'user/signin'
+- header('The Business Cookbook', 'Recipes for success')
 
 %h3 Featured recipe:
 = render :partial => 'recipes/recipe', :locals => {:recipe => @featured}
 
 - content_for :chef do 
-  = render :partial => 'chef/side', :locals => {:chef => @featured.chef}
+  = render :partial => 'chefs/side', :locals => {:chef => @featured.chef}
   %h3 Featured chefs
   %ul.links.chefs
     - recent_links(:chef, :name, 5).each do |link|

@@ -1,0 +1,7 @@
+- content_for :header do
+  %a#bookmark Bookmark
+  %div.content
+    %h1#title=title
+    %h2#tag_line=tag_line if tag_line
+    =render :partial => 'layouts/notices'
+    =render :partial => 'user/signin'

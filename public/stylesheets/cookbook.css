@@ -79,11 +79,10 @@ h4 {
 		overflow:auto;
 	}
 		.recipe_form label {
-			font-size:2em;
-			line-height:1.5em;
+			display:block;
 		}
 		.recipe_form input, .recipe_form textarea {
-			font-size:1.5em;
+			margin-bottom:0.5em;
 		}
 		.recipe_form > p {
 			float:left;
@@ -91,14 +90,6 @@ h4 {
 		.recipe_form .steps {
 			clear:left;
 		}
-			.recipe_form .steps textarea {
-				width:20em;
-				height:20em;
-			}
-			.recipe_form .ingredients textarea {
-				width:10em;
-				height:10em;
-			}
 		.recipe_form .ingredients {
 			margin-left:1em;
 		}

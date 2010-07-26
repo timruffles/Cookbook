@@ -17,6 +17,8 @@
             #hd{:role => "banner"}
               = yield :header
             #bd{:role => "main"}
+              %p.success= flash[:notices] if flash[:notices] 
+              %p.error=   flash[:warnings] if flash[:warnings]
               %div.content
                 = yield
                 #ft{:role => "contentinfo"}
