@@ -1,5 +1,7 @@
 class Recipe < ActiveRecord::Base
   
+  acts_as_followable
+  
   belongs_to :chef
   has_many   :steps
   

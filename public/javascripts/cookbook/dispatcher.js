@@ -1,5 +1,7 @@
 dojo.provide('cookbook.Dispatcher');
 
+
+// not really needed - using javascript_auto_include instead
 (function(d, $) {
 	
 	var toArray = function(candidate) {

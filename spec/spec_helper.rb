@@ -22,6 +22,11 @@ Spork.prefork do
   # in ./support/ and its subdirectories.
   Dir[File.expand_path(File.join(File.dirname(__FILE__),'support','**','*.rb'))].each {|f| require f}
   
+  require "devise/test_helpers" 
+  class ActionController::TestCase 
+    include Devise::TestHelpers 
+  end
+  
 end
 
 Spork.each_run do

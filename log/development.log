@@ -36477,3 +36477,138 @@ ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" wit
   /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Development/Cothink/cookbook/app/models/user.rb:9)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Development/Cothink/cookbook/app/models/chef.rb:14)
+
+
+Processing HomeController#index (for 10.0.2.2 at 2010-07-27 10:59:31) [GET]
+  [4;36;1mUser Load (6.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 44) LIMIT 1[0m
+  [4;35;1mRecipe Load (1.6ms)[0m   [0mSELECT * FROM "recipes" LIMIT 1[0m
+  [4;36;1mChef Load (2.8ms)[0m   [0;1mSELECT * FROM "chefs" WHERE ("chefs"."id" = 1) [0m
+  [4;35;1mRecipe Load (1.8ms)[0m   [0mSELECT "recipes".* FROM "recipes" WHERE ("recipes".chef_id = 1) [0m
+  [4;36;1mStep Load (2.6ms)[0m   [0;1mSELECT "steps".* FROM "steps" WHERE ("steps".recipe_id = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_notices (5.1ms)
+Rendered user/_signin (9.0ms)
+Rendered layouts/_header (49.9ms)
+  [4;35;1mSQL (2.2ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" WHERE ("todos".step_id = 13) [0m
+  [4;36;1mTodo Load (1.5ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 13) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" WHERE ("todos".step_id = 14) [0m
+  [4;36;1mTodo Load (1.5ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 14) [0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" WHERE ("todos".step_id = 15) [0m
+  [4;36;1mTodo Load (1.6ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 15) [0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" WHERE ("todos".step_id = 16) [0m
+  [4;36;1mTodo Load (1.5ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 16) [0m
+Rendered recipes/_checklist (86.8ms)
+Rendered recipes/_recipe (105.1ms)
+Rendered chefs/_side (6.9ms)
+  [4;35;1mChef Load (4.8ms)[0m   [0mSELECT * FROM "chefs" ORDER BY created_at DESC LIMIT 5[0m
+  [4;36;1mRecipe Load (2.8ms)[0m   [0;1mSELECT * FROM "recipes" ORDER BY created_at DESC LIMIT 5[0m
+  [4;35;1mChef Load (3.0ms)[0m   [0mSELECT * FROM "chefs" WHERE ("chefs"."id" IN (7,1,18,19,20)) [0m
+  [4;36;1mStep Load (3.5ms)[0m   [0;1mSELECT "steps".* FROM "steps" WHERE ("steps".recipe_id IN (5,4,3,2,1)) [0m
+Completed in 464ms (View: 315, DB: 43) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 10.0.2.2 at 2010-07-27 10:59:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 10.0.2.2 at 2010-07-27 10:59:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/no-profile.png" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ChefsController#show (for 10.0.2.2 at 2010-07-27 11:00:49) [GET]
+  Parameters: {"id"=>"20"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Development/Cothink/cookbook/app/models/user.rb:9)
+  [4;35;1mUser Load (5.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 44) LIMIT 1[0m
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Development/Cothink/cookbook/app/models/chef.rb:14)
+  [4;36;1mChef Load (3.3ms)[0m   [0;1mSELECT * FROM "chefs" WHERE ("chefs"."id" = 20) [0m
+Rendering template within layouts/application
+Rendering chefs/show
+Rendered layouts/_notices (0.2ms)
+Rendered user/_signin (4.4ms)
+Rendered layouts/_header (15.8ms)
+  [4;35;1mRecipe Load (1.8ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes".chef_id = 20) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "chefs" WHERE ("chefs"."id" = 20) [0m
+  [4;35;1mStep Load (3.1ms)[0m   [0mSELECT "steps".* FROM "steps" WHERE ("steps".recipe_id = 5) [0m
+Completed in 332ms (View: 256, DB: 13) | 200 OK [http://127.0.0.1/chefs/20]
+
+
+Processing ApplicationController#index (for 10.0.2.2 at 2010-07-27 11:00:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 10.0.2.2 at 2010-07-27 11:00:51) [GET]
+  Parameters: {"1280162444"=>nil}
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Development/Cothink/cookbook/app/models/user.rb:9)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Development/Cothink/cookbook/app/models/chef.rb:16)

@@ -1,6 +1,24 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
   
+  def api_operation
+    
+    success = true
+
+    begin
+      
+      yield
+
+    rescue Exception => e
+      success = false
+    end
+    
+    respond_to do |format|
+      format.json { success }
+    end
+    
+  end
+  
   def header title, tagline = nil
     render :partial => 'layouts/header', :locals => {:title => title, :tag_line => tagline}
   end

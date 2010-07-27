@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   
   has_many :todos
+  acts_as_follower
   
   # has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>", :micro => "40x40#" }
   
