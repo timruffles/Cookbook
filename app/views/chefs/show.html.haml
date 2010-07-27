@@ -1,0 +1,10 @@
+- header(@chef.name, @chef.tag_line)
+%div.biog
+  =image_tag(@chef.profile_img || 'no_profile.png', :class => 'profile_img')
+  %p= @chef.tag_line
+
+- content_for :side do
+  %h3 Recipes by this chef
+  %ul.recipes
+    - @chef.recipes.each do |recipe|
+      %li=link_to(recipe.name, recipe)

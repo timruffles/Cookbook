@@ -38,12 +38,12 @@ h4 {
 	background-image:url(../images/bookmark.png);
 	background-repeat:no-repeat;
 }
-#bookmark:hover {
-	background-image:url(../images/bookmark-hover.png);
-}
-#bookmark.checked {
-	background-image:url(../images/bookmark-checked.png);
-}
+	#bookmark:hover {
+		background-image:url(../images/bookmark-hover.png);
+	}
+	#bookmark.checked {
+		background-image:url(../images/bookmark-checked.png);
+	}
 /* main */
 #doc2 {
 	overflow:hidden;

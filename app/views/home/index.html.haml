@@ -1,9 +1,9 @@
 - header('The Business Cookbook', 'Recipes for success')
-
+%h3.splash Business know-how for the web
 %h3 Featured recipe:
 = render :partial => 'recipes/recipe', :locals => {:recipe => @featured}
 
-- content_for :chef do 
+- content_for :side do 
   = render :partial => 'chefs/side', :locals => {:chef => @featured.chef}
   %h3 Featured chefs
   %ul.links.chefs

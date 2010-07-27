@@ -47,6 +47,12 @@ ActiveRecord::Schema.define(:version => 20100718104046) do
     t.string   "linkedin"
     t.string   "facebook"
     
+    # # paperclip
+    # t.string   'avatar_file_name'  
+    # t.string   'avatar_content_type'
+    # t.integer  'avatar_file_size'
+    # t.datetime 'avatar_updated_at'
+    # 
     t.string   "email",                               :default => "", :null => false
     t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
     t.string   "password_salt",                       :default => "", :null => false
@@ -69,6 +75,12 @@ ActiveRecord::Schema.define(:version => 20100718104046) do
     
     t.string   "name"
     t.date     "lazily_registered_date"
+    
+    # # paperclip
+    # t.string   'avatar_file_name'  
+    # t.string   'avatar_content_type'
+    # t.integer  'avatar_file_size'
+    # t.datetime 'avatar_updated_at'
     
     t.string   "email",                               :default => "", :null => false
     t.string   "encrypted_password",   :limit => 128, :default => "", :null => false

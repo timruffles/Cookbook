@@ -2,6 +2,8 @@ class Chef < ActiveRecord::Base
   
   has_many :recipes
   
+  # has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>", :micro => "40x40#" }
+  
   accepts_nested_attributes_for :recipes
   
   # ARRRRRRRRG! - make sure everything is listed here, included all nested attributes
