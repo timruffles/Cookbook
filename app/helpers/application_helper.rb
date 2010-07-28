@@ -1,26 +1,8 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
   
-  def api_operation
-    
-    success = true
-
-    begin
-      
-      yield
-
-    rescue Exception => e
-      success = false
-    end
-    
-    respond_to do |format|
-      format.json { success }
-    end
-    
-  end
-  
-  def header title, tagline = nil
-    render :partial => 'layouts/header', :locals => {:title => title, :tag_line => tagline}
+  def header title, tagline = nil, to_follow = nil
+    render :partial => 'layouts/header', :locals => {:title => title, :tag_line => tagline, :to_follow => to_follow}
   end
   
   def recent_records model, count
@@ -35,7 +17,7 @@ module ApplicationHelper
     
     if block_given? 
       records.each do |record|
-        yield link_to record.send(link_text_attribute), record
+        yield link_to(record.send(link_text_attribute), record), record
       end
     else
       records.inject([]) do |output, record|

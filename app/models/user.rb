@@ -2,6 +2,22 @@ class User < ActiveRecord::Base
   
   has_many :todos
   acts_as_follower
+
+  def things_done
+    done = []
+    done += self.all_follows
+    done += self.todos(:conditions => "completed_date != ''")
+    
+    done.sort do |a,b|
+      if a.updated_at == b.updated_at
+        0
+      else
+        # trying to get descending from most recent to oldest, works with '<' but shouldn't this be the biggest date? *confused*
+        # works that way on a Time object... uh...
+        a.updated_at < b.updated_at ? 1 : -1
+      end
+    end
+  end
   
   # has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>", :micro => "40x40#" }
   

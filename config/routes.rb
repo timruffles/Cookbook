@@ -5,6 +5,14 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :recipes
   map.resources :chefs
+  map.resources :follows
+  map.resources :users, :include => [:show], :collection => { 
+    :claim => :get,
+    :claimed => :post,
+    :sign_in_force => :get
+  }
+  
+  map.help 'help', :controller => :help, :action => :index
 
   map.root :controller => "home"
   

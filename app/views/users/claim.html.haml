@@ -1,0 +1,15 @@
+- header('Claim your account')
+
+%p Enter an email and password below to claim your progress so far, and it'll be available next time you login.
+
+- form_for(:user, current_user, :url => claimed_users_path) do |f|
+  %div
+    = f.label :name
+    = f.text_field :name
+  %div
+    = f.label :email
+    = f.text_field :email
+  %div
+    = f.label :password
+    = f.password_field :password
+  = f.submit "Claim your account"

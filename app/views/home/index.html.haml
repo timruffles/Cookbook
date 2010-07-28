@@ -1,4 +1,4 @@
-- header('The Business Cookbook', 'Recipes for success')
+- header('The Business Cookbook', 'Recipes for success', @featured)
 %h3.splash Business know-how for the web
 %h3 Featured recipe:
 = render :partial => 'recipes/recipe', :locals => {:recipe => @featured}
@@ -7,10 +7,14 @@
   = render :partial => 'chefs/side', :locals => {:chef => @featured.chef}
   %h3 Featured chefs
   %ul.links.chefs
-    - recent_links(:chef, :name, 5).each do |link|
-      %li= link
+    - recent_links(:chef, :name, 5) do |link, chef|
+      %li
+        = image_tag(chef.profile_img, :class => 'micro') if chef.profile_img
+        = link
   %h3 Featured recipies
   %ul.links.recipes
-    - recent_links(:recipe, :name, 5).each do |link|
-      %li= link
+    - recent_links(:recipe, :name, 5).each do |link, recipe|
+      %li
+        = image_tag(recipe.chef.profile_img, :class => 'micro') if recipe
+        = link
     

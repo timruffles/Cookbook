@@ -1,0 +1,7 @@
+- header('Your page')
+
+%ul.activity
+  - @activity.each do |activity|
+    %li
+      %span.what= activity.did_what
+      %span.when= time_ago_in_words(activity.did_when) + ' ago'

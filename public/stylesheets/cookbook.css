@@ -1,5 +1,6 @@
 body {
 	font-family:tahoma;
+	margin:0 10px 10px 10px;
 }
 #title {
 	font-family:'Bakerville', 'Georgia';
@@ -8,10 +9,6 @@ body {
 	margin-bottom:0;
 }
 div > h1, div > h2 {
-	margin-top:0;
-}
-#tag_line {
-	color:#F70707;
 	margin-top:0;
 }
 h1, h2, h3, h4, h5 {
@@ -26,6 +23,9 @@ h3 {
 h4 {
 	font-size:1.25em;
 }
+label {
+	display:block;
+}
 #hd {
 	position:relative;
 }
@@ -37,12 +37,13 @@ h4 {
 	text-indent:-500em;
 	background-image:url(../images/bookmark.png);
 	background-repeat:no-repeat;
+	border:0;
+}
+#bookmark.following {
+	background-image:url(../images/bookmark-checked.png);
 }
 	#bookmark:hover {
 		background-image:url(../images/bookmark-hover.png);
-	}
-	#bookmark.checked {
-		background-image:url(../images/bookmark-checked.png);
 	}
 /* main */
 #doc2 {
@@ -64,16 +65,88 @@ h4 {
 		margin-left:18%;
 	}
 /* common page elements */
-#chef {
+#secondary {
 	padding-top:3em;
 }
+#toolbar {
+	border-top:2px solid #444;
+	clear:both;
+	overflow-y:hidden;
+	overflow-x:auto;
+	width:100%;
+	margin:0 0 1em 0;padding:0;
+	text-align:center;
+}
+	#toolbar li {
+		width:140px;
+		height:60px;
+		list-style-type:none;
+		float:left;
+		margin-right:1em;
+		color:#fff;
+		text-align:center;
+	}
+		#toolbar li.first {
+			margin-left:8em;
+		}
+		}
+		#toolbar li.working:hover, #toolbar li.completed:hover {
+			background:#5E0606;
+		}
+	#toolbar a {
+		background:#820808;
+		color:#fff;
+		display:block;
+		height:100%;
+		width:100%;
+		text-decoration:none;
+		border-bottom:1px solid #444;
+	}
+	#toolbar li a:hover {
+		background:#990909;
+	}
+	#toolbar .title {
+		text-transform: uppercase;
+		display:block;
+		font-size:1.2em;
+		line-height:1.5;
+		font-weight:900;
+		text-shadow: 1px 1px 0px #000;
+	}
+	#toolbar .count, #toolbar .score {
+		font-size:2em;
+		font-weight:900;
+	}
+	#toolbar .count {
+		color:#02D0F5;
+	}
+	#toolbar .score {
+		color:#02D0F5;
+	}
+/*	#toolbar .home {
+		background:#820808;
+	}
+	#toolbar .your_page {
+		background:#820808;
+	}*/
+	#toolbar .working {
+		background:#5E0606;
+	}
+	#toolbar .completed {
+		background:#5E0606;
+	}
 
 /* search */
 #search_q {
 	font-size:2em;
 }
 
+
 /* recipies */
+.recipe {}
+	.recipe h3 a {
+		color:#F70707;
+	}
 	/* new */
 	.recipe_form {
 		overflow:auto;
@@ -114,6 +187,16 @@ h4 {
 		line-height:1.75em;
 		list-style-type:none;
 	}
+	
+.links li {
+	list-style-type:none;
+	margin:0.5em 0;
+}
+.links {
+	margin:0;
+	padding:0;
+}
+
 /* Chef
 ************************/
 #chef {
@@ -128,6 +211,29 @@ h4 {
 		height:80px;
 		border:1px solid #ddd;
 	}
+	.micro {
+		height:40px;
+		width:40px;
+	}
+	
+/* User activity stream
+************************/
+.activity {
+	margin:0;
+	padding:0;
+}
+	.activity li {
+		list-style-type:none;
+		margin:0.75em 0;
+	}
+.what {
+	font-size:1.25em;
+}
+.when {
+	width:5em;
+	font-weight:900;
+	color:#888;
+}
 
 /* Awesome buttons
 ************************/

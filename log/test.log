@@ -762,3 +762,243 @@
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
+  [4;36;1mStep Create (5.2ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:29:04', NULL, '2010-07-27 13:29:04', NULL, NULL)[0m
+  [4;36;1mStep Create (5.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:29:07', NULL, '2010-07-27 13:29:07', NULL, NULL)[0m
+  [4;36;1mStep Create (5.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:29:44', NULL, '2010-07-27 13:29:44', NULL, NULL)[0m
+  [4;36;1mStep Create (65.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:30:13', NULL, '2010-07-27 13:30:13', NULL, NULL)[0m
+  [4;36;1mStep Create (6.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:31:17', NULL, '2010-07-27 13:31:17', NULL, NULL)[0m
+  [4;36;1mStep Create (5.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:31:32', NULL, '2010-07-27 13:31:32', NULL, NULL)[0m
+  [4;36;1mStep Create (6.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:31:51', NULL, '2010-07-27 13:31:51', NULL, NULL)[0m
+  [4;36;1mStep Create (4.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:32:49', NULL, '2010-07-27 13:32:49', NULL, NULL)[0m
+  [4;36;1mStep Create (5.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:33:09', NULL, '2010-07-27 13:33:09', NULL, NULL)[0m
+  [4;36;1mStep Create (6.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:34:07', NULL, '2010-07-27 13:34:07', NULL, NULL)[0m
+  [4;36;1mStep Create (5.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:36:01', NULL, '2010-07-27 13:36:01', NULL, NULL)[0m
+  [4;35;1mStep Create (5.3ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:36:02', NULL, '2010-07-27 13:36:02', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.8ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 13:36:02', '2010-07-27 13:36:02', 943791365, NULL, NULL)[0m
+  [4;36;1mStep Create (4.8ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:36:27', NULL, '2010-07-27 13:36:27', NULL, NULL)[0m
+  [4;35;1mStep Create (5.9ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:36:27', NULL, '2010-07-27 13:36:27', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.8ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 13:36:27', '2010-07-27 13:36:27', 943791365, NULL, NULL)[0m
+  [4;36;1mStep Create (6.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:36:37', NULL, '2010-07-27 13:36:37', NULL, NULL)[0m
+  [4;35;1mStep Create (5.6ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:36:37', NULL, '2010-07-27 13:36:37', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.8ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 13:36:37', '2010-07-27 13:36:37', 943791365, NULL, NULL)[0m
+  [4;36;1mStep Create (5.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:37:37', NULL, '2010-07-27 13:37:37', NULL, NULL)[0m
+  [4;35;1mStep Create (6.5ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:37:37', NULL, '2010-07-27 13:37:37', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.9ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 13:37:37', NULL, '2010-07-27 13:37:37', 1, NULL, NULL)[0m
+  [4;36;1mStep Create (4.7ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:38:03', NULL, '2010-07-27 13:38:03', NULL, NULL)[0m
+  [4;35;1mStep Create (14.9ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:38:03', NULL, '2010-07-27 13:38:03', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.8ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 13:38:03', NULL, '2010-07-27 13:38:03', 1, NULL, NULL)[0m
+  [4;36;1mStep Create (5.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:38:16', NULL, '2010-07-27 13:38:16', NULL, NULL)[0m
+  [4;35;1mStep Create (11.5ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:38:16', NULL, '2010-07-27 13:38:16', NULL, NULL)[0m
+  [4;36;1mTodo Create (1.5ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 13:38:16', NULL, '2010-07-27 13:38:16', 1, NULL, NULL)[0m
+  [4;36;1mStep Create (6.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:38:31', NULL, '2010-07-27 13:38:31', NULL, NULL)[0m
+  [4;35;1mStep Create (5.8ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:38:32', NULL, '2010-07-27 13:38:32', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.8ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 13:38:32', NULL, '2010-07-27 13:38:32', 1, NULL, NULL)[0m
+  [4;36;1mStep Create (5.7ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:38:41', NULL, '2010-07-27 13:38:41', NULL, NULL)[0m
+  [4;35;1mStep Create (8.4ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:38:41', NULL, '2010-07-27 13:38:41', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.7ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 13:38:41', NULL, '2010-07-27 13:38:41', 1, NULL, NULL)[0m
+  [4;36;1mStep Create (15.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:38:57', NULL, '2010-07-27 13:38:57', NULL, NULL)[0m
+  [4;35;1mStep Create (5.7ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:38:57', NULL, '2010-07-27 13:38:57', NULL, NULL)[0m
+  [4;36;1mTodo Create (1.1ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 13:38:57', '2010-07-27 13:38:57', '2010-07-27 13:38:57', 1, NULL, NULL)[0m
+  [4;36;1mStep Create (12.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:39:09', NULL, '2010-07-27 13:39:09', NULL, NULL)[0m
+  [4;35;1mStep Create (5.7ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 13:39:09', NULL, '2010-07-27 13:39:09', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.9ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 13:39:09', '2010-07-27 13:39:09', '2010-07-27 13:39:09', 1, NULL, NULL)[0m
+  [4;36;1mStep Create (3.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:08:57', NULL, '2010-07-27 23:08:57', NULL, NULL)[0m
+  [4;36;1mStep Create (4.7ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:09:12', NULL, '2010-07-27 23:09:12', NULL, NULL)[0m
+  [4;36;1mStep Create (5.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:09:15', NULL, '2010-07-27 23:09:15', NULL, NULL)[0m
+  [4;36;1mStep Create (6.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:10:23', NULL, '2010-07-27 23:10:23', NULL, NULL)[0m
+  [4;35;1mUser Load (3.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (1.7ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (7.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:10:25', NULL, '2010-07-27 23:10:25', NULL, NULL)[0m
+  [4;35;1mUser Load (1.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.2ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.7ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.1ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (5.8ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:11:04', NULL, '2010-07-27 23:11:04', NULL, NULL)[0m
+  [4;35;1mStep Create (5.5ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:11:04', NULL, '2010-07-27 23:11:04', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.8ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:11:04', NULL, '2010-07-27 23:11:04', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (1.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.4ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.5ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.1ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (7.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:11:06', NULL, '2010-07-27 23:11:06', NULL, NULL)[0m
+  [4;35;1mStep Create (5.5ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:11:06', NULL, '2010-07-27 23:11:06', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.7ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:11:06', NULL, '2010-07-27 23:11:06', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (1.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.2ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.3ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.1ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (8.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:11:32', NULL, '2010-07-27 23:11:32', NULL, NULL)[0m
+  [4;35;1mStep Create (5.2ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:11:32', NULL, '2010-07-27 23:11:32', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.7ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:11:32', NULL, '2010-07-27 23:11:32', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.9ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.5ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (6.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:11:34', NULL, '2010-07-27 23:11:34', NULL, NULL)[0m
+  [4;35;1mStep Create (5.7ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:11:34', NULL, '2010-07-27 23:11:34', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.7ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:11:34', NULL, '2010-07-27 23:11:34', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.7ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.4ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (8.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:12:09', NULL, '2010-07-27 23:12:09', NULL, NULL)[0m
+  [4;35;1mStep Create (5.3ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:12:09', NULL, '2010-07-27 23:12:09', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.8ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:12:09', NULL, '2010-07-27 23:12:09', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.3ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mStep Create (7.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:12:12', NULL, '2010-07-27 23:12:12', NULL, NULL)[0m
+  [4;35;1mStep Create (5.9ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:12:12', NULL, '2010-07-27 23:12:12', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.7ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:12:12', NULL, '2010-07-27 23:12:12', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (1.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.3ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mStep Create (8.7ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:12:23', NULL, '2010-07-27 23:12:23', NULL, NULL)[0m
+  [4;35;1mStep Create (5.8ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:12:24', NULL, '2010-07-27 23:12:24', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.6ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:12:24', NULL, '2010-07-27 23:12:24', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (1.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.1ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.3ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.1ms)[0m   [0;1mSELECT * FROM "todos" [0m
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (7.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:12:26', NULL, '2010-07-27 23:12:26', NULL, NULL)[0m
+  [4;35;1mStep Create (5.3ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:12:26', NULL, '2010-07-27 23:12:26', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.9ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:12:26', NULL, '2010-07-27 23:12:26', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (1.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.1ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.1ms)[0m   [0;1mSELECT * FROM "todos" [0m
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (7.3ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:13:30', NULL, '2010-07-27 23:13:30', NULL, NULL)[0m
+  [4;35;1mStep Create (5.1ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:13:30', NULL, '2010-07-27 23:13:30', NULL, NULL)[0m
+  [4;36;1mTodo Create (1.3ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:13:30', NULL, '2010-07-27 23:13:30', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (2.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.3ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.4ms)[0m   [0;1mSELECT * FROM "todos" [0m
+  [4;35;1mTodo Load (0.4ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (6.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:13:32', NULL, '2010-07-27 23:13:32', NULL, NULL)[0m
+  [4;35;1mStep Create (5.3ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:13:32', NULL, '2010-07-27 23:13:32', NULL, NULL)[0m
+  [4;36;1mTodo Create (1.2ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:13:32', NULL, '2010-07-27 23:13:32', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (2.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.3ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.4ms)[0m   [0;1mSELECT * FROM "todos" [0m
+  [4;35;1mTodo Load (0.5ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (6.2ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:14:19', NULL, '2010-07-27 23:14:19', NULL, NULL)[0m
+  [4;35;1mStep Create (5.5ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:14:19', NULL, '2010-07-27 23:14:19', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.6ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:14:19', NULL, '2010-07-27 23:14:19', 943791365, NULL, NULL)[0m
+  [4;35;1mStep Load (2.9ms)[0m   [0mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mTodo Load (0.4ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Create (7.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:14:22', NULL, '2010-07-27 23:14:22', NULL, NULL)[0m
+  [4;35;1mStep Create (5.9ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:14:22', NULL, '2010-07-27 23:14:22', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.5ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:14:22', NULL, '2010-07-27 23:14:22', 943791365, NULL, NULL)[0m
+  [4;35;1mStep Load (1.6ms)[0m   [0mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mStep Load (0.4ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mTodo Load (0.4ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Create (7.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:14:48', NULL, '2010-07-27 23:14:48', NULL, NULL)[0m
+  [4;35;1mStep Create (6.1ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:14:48', NULL, '2010-07-27 23:14:48', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.6ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:14:48', NULL, '2010-07-27 23:14:48', 943791365, NULL, NULL)[0m
+  [4;35;1mStep Load (1.5ms)[0m   [0mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mTodo Load (0.5ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (6.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:14:50', NULL, '2010-07-27 23:14:50', NULL, NULL)[0m
+  [4;35;1mStep Create (5.5ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:14:50', NULL, '2010-07-27 23:14:50', NULL, NULL)[0m
+  [4;36;1mTodo Create (1.4ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:14:50', NULL, '2010-07-27 23:14:50', 943791365, NULL, NULL)[0m
+  [4;35;1mStep Load (2.2ms)[0m   [0mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (7.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:15:05', NULL, '2010-07-27 23:15:05', NULL, NULL)[0m
+  [4;35;1mStep Create (5.7ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:15:05', NULL, '2010-07-27 23:15:05', NULL, NULL)[0m
+  [4;36;1mTodo Create (1.9ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:15:05', NULL, '2010-07-27 23:15:05', 943791365, NULL, NULL)[0m
+  [4;35;1mStep Load (2.4ms)[0m   [0mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mStep Load (0.2ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (6.5ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:15:08', NULL, '2010-07-27 23:15:08', NULL, NULL)[0m
+  [4;35;1mStep Create (5.9ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:15:08', NULL, '2010-07-27 23:15:08', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.5ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:15:08', NULL, '2010-07-27 23:15:08', 943791365, NULL, NULL)[0m
+  [4;35;1mStep Load (2.1ms)[0m   [0mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mStep Load (1.1ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (8.2ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:15:43', NULL, '2010-07-27 23:15:43', NULL, NULL)[0m
+  [4;35;1mStep Create (5.1ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:15:43', NULL, '2010-07-27 23:15:43', NULL, NULL)[0m
+  [4;36;1mTodo Create (1.4ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:15:43', NULL, '2010-07-27 23:15:43', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (1.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.3ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.5ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (7.8ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:15:46', NULL, '2010-07-27 23:15:46', NULL, NULL)[0m
+  [4;35;1mStep Create (5.9ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-27 23:15:46', NULL, '2010-07-27 23:15:46', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.5ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-27 23:15:46', NULL, '2010-07-27 23:15:46', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (2.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.3ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (7.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:28:39', NULL, '2010-07-28 13:28:39', NULL, NULL)[0m
+  [4;35;1mStep Create (8.4ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:28:39', NULL, '2010-07-28 13:28:39', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.4ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-28 13:28:39', NULL, '2010-07-28 13:28:39', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (3.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (1.2ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (1.1ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (1.5ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (8.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:00', NULL, '2010-07-28 13:30:00', NULL, NULL)[0m
+  [4;35;1mStep Create (8.1ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:00', NULL, '2010-07-28 13:30:00', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.5ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-28 13:30:00', NULL, '2010-07-28 13:30:00', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (3.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.4ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.8ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.5ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (9.1ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:03', NULL, '2010-07-28 13:30:03', NULL, NULL)[0m
+  [4;35;1mStep Create (7.0ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:03', NULL, '2010-07-28 13:30:03', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.5ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-28 13:30:03', NULL, '2010-07-28 13:30:03', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (2.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.4ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (1.0ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (429.4ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:16', NULL, '2010-07-28 13:30:16', NULL, NULL)[0m
+  [4;35;1mStep Create (358.1ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:17', NULL, '2010-07-28 13:30:17', NULL, NULL)[0m
+  [4;36;1mTodo Create (2.3ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-28 13:30:18', NULL, '2010-07-28 13:30:18', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (2.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.2ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.3ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (35.7ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:22', NULL, '2010-07-28 13:30:22', NULL, NULL)[0m
+  [4;35;1mStep Create (8.6ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:22', NULL, '2010-07-28 13:30:22', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.7ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-28 13:30:22', NULL, '2010-07-28 13:30:22', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.1ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.4ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (7.6ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:34', NULL, '2010-07-28 13:30:34', NULL, NULL)[0m
+  [4;35;1mStep Create (6.6ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:34', NULL, '2010-07-28 13:30:34', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.5ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-28 13:30:34', NULL, '2010-07-28 13:30:34', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (2.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.7ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.3ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (7.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:37', NULL, '2010-07-28 13:30:37', NULL, NULL)[0m
+  [4;35;1mStep Create (5.9ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:37', NULL, '2010-07-28 13:30:37', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.4ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-28 13:30:37', NULL, '2010-07-28 13:30:37', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (2.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.2ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.1ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (6.9ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:47', NULL, '2010-07-28 13:30:47', NULL, NULL)[0m
+  [4;35;1mStep Create (5.9ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:47', NULL, '2010-07-28 13:30:47', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.5ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-28 13:30:47', NULL, '2010-07-28 13:30:47', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.4ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m
+  [4;36;1mStep Create (7.0ms)[0m   [0;1mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:49', NULL, '2010-07-28 13:30:49', NULL, NULL)[0m
+  [4;35;1mStep Create (6.6ms)[0m   [0mINSERT INTO "steps" ("created_at", "recipe_id", "updated_at", "text", "url") VALUES('2010-07-28 13:30:49', NULL, '2010-07-28 13:30:49', NULL, NULL)[0m
+  [4;36;1mTodo Create (0.4ms)[0m   [0;1mINSERT INTO "todos" ("created_at", "completed_date", "updated_at", "step_id", "reminder_date", "user_id") VALUES('2010-07-28 13:30:49', NULL, '2010-07-28 13:30:49', 943791365, NULL, NULL)[0m
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 980204181) [0m
+  [4;36;1mStep Load (0.3ms)[0m   [0;1mSELECT * FROM "steps" WHERE ("steps"."id" = 922380938) [0m
+  [4;35;1mStep Load (0.3ms)[0m   [0mSELECT "steps".* FROM "steps" LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = 980204181 WHERE ("steps"."id" = 922380938) [0m
+  [4;36;1mTodo Load (0.9ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".step_id = 922380938) [0m

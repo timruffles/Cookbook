@@ -1,5 +1,0 @@
-- if(user_signed_in? && current_user.lazily_registered_date == nil)
-  %p
-    You're currently signed in. #{link_to 'Logout', destroy_user_session_path}
-- else
-  %p= link_to 'Sign in', new_user_session_path

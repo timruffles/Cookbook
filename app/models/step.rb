@@ -3,8 +3,11 @@ class Step < ActiveRecord::Base
   has_many   :todos
   belongs_to :recipe
   
-  # TODO move to check / started / whatever it is
-  accepts_nested_attributes_for :todos, :reject_if => lambda {|attrs| attrs[:state] == 0}
+  named_scope :with_todos_for, lambda {|user|
+    user ? {:joins => sprintf('LEFT OUTER JOIN todos ON todos.step_id = steps.id AND todos.user_id = %d', user.id)} : {}
+  }
+  
+  accepts_nested_attributes_for :todos, :reject_if => lambda {|attrs| attrs[:completed_date] == ""}
   
   class << self
     
@@ -18,7 +21,7 @@ class Step < ActiveRecord::Base
       
         # remove all urls, taking the last on as the step
         url = ''
-        part.gsub!(/(?:(?:http:\/\/)?(?:www\.)?)(?:[\w_-]*)(?:\.\w+)+/) do |match|
+        part.gsub!(/(?:(?:http:\/\/)?(?:www\.)?)(?:[\w_-]*)(?:\.\w+)+\S*/) do |match|
           url = match
           ''
         end

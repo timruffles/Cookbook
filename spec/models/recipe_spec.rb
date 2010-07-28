@@ -38,4 +38,5 @@ describe Recipe do
     recipe.steps.length.should == 3
     recipe.steps[1].text.should == 'two'
   end
+  
 end

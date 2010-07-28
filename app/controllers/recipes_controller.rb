@@ -14,9 +14,7 @@ class RecipesController < ApplicationController
   # GET /recipes/1.xml
   def show
     
-    @recipe = Recipe.with_todos_for(user_signed_in? ? current_user : nil).find(params[:id])
-
- #   @recipe = Recipe.find(params[:id])
+    @recipe = Recipe.find(params[:id])
     
     respond_to do |format|
       format.html # show.html.erb
@@ -61,9 +59,17 @@ class RecipesController < ApplicationController
   # PUT /recipes/1.xml
   def update
     @recipe = Recipe.find(params[:id])
+    
+    updated = @recipe.update_attributes!(params[:recipe])
+    
+    if updated
+      if @recipe.todos.for(current_user).length > 0
+        current_user.follow(@recipe)
+      end
+    end
 
     respond_to do |format|
-      if @recipe.update_attributes!(params[:recipe])
+      if updated
         format.html { redirect_to(@recipe, :notice => 'Recipe was successfully updated.') }
         format.xml  { head :ok }
       else

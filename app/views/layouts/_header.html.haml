@@ -1,7 +1,7 @@
 - content_for :header do
-  %a#bookmark Bookmark
+  = render :partial => 'follows/bookmark', :locals => {:to_follow => to_follow}
   %div.content
     %h1#title=title
     %h2#tag_line=tag_line if tag_line
     =render :partial => 'layouts/notices'
-    =render :partial => 'user/signin'
+    =render :partial => 'users/signin'

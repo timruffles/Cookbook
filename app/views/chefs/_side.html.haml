@@ -1,6 +1,6 @@
 %div.biog
   %h2= chef.name
-  =image_tag(chef.profile_img || 'no_profile.png', :class => 'profile_img')
+  =#image_tag(chef.profile_img || 'no_profile.png', :class => 'profile_img')
   %p= chef.tag_line
 %div
   %h4= "#{chef.name.split(' ').first}'s recipes"

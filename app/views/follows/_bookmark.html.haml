@@ -1,0 +1,13 @@
+- if to_follow
+  - unless current_user.following?(to_follow)
+    - form_tag({:controller => :follows}, {:method => :post}) do |f|
+      = submit_tag "Save #{to_follow.name}", :id => 'bookmark'
+      = hidden_field_tag 'follow[followable_id]', to_follow.id
+      = hidden_field_tag 'follow[followable_type]', to_follow.class  
+  - else
+    - form_tag({:controller => :follows, :action=>"destroy"}, {:method => :delete}) do |f|
+      = submit_tag "Stop watching #{to_follow.name}", :id => 'bookmark', :class => 'following'
+      = hidden_field_tag 'follow[followable_id]', to_follow.id
+      = hidden_field_tag 'follow[followable_type]', to_follow.class
+- else
+  = submit_tag "Nothing to follow", :id => 'follow', :class => 'disabled'

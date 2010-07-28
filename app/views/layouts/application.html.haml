@@ -4,7 +4,6 @@
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}/
     %title
     = stylesheet_link_tag 'yui'
-    = stylesheet_link_tag 'scaffold'
     = stylesheet_link_tag '../javascripts/dijit/themes/dijit.css'
     = stylesheet_link_tag 'cookbook'
     %script{:djConfig => "parseOnLoad:true,baseUrl: '/javascripts/',modulePaths: { ruflr: 'ruflr', cookbook: 'cookbook'}", :src => "http://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js", :type => "text/javascript"}
@@ -12,6 +11,27 @@
     = javascript_auto_include_tags
   %body
     #doc2.yui-t7
+      %ul#toolbar
+        %li.home.first
+          %a{:href => root_path}
+            %span.title Home
+            %span.other Where it began
+        %li.your_page
+          %a{:href => user_path(current_user)}
+            %span.title Your page
+            %span.other See your activity
+        %li.working
+          %span.title Recipes Begun
+          %span.other.count
+            = current_user.follows_by_type('Recipe').length
+        %li.completed
+          %span.title Steps Done
+          %span.score
+            = current_user.todos.completed.length
+        %li.help
+          %a{:href => help_path}
+            %span.title Help!
+            %span What's this site?
       #wrap.yui-ge
         %div.yui-u.first
           #book
@@ -26,7 +46,7 @@
                   %p
                     Business Cookbook
         %div.yui-u
-          #chef
+          #secondary
             = yield :side
     -['bookmark','bookmark-checked','bookmark-hover'].each do |img|
       %div{:class=>'preload',:style=>"background-url(../images/#{img}.png)"}

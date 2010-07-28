@@ -14,6 +14,7 @@ gem 'haml'
 gem 'rspec', '1.3.0'
 gem 'rspec-rails', '1.3.2'
 gem 'factory_girl'
+gem 'cucumber-rails'
 
 gem 'ZenTest'
 gem 'autotest-rails'

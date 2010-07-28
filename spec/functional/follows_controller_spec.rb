@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe FollowsController do
   
-  #arg doesn't work :(
+  # doesn't work :(
    include Devise::TestHelpers
   
   fixtures :users, :recipes
