@@ -1,4 +1,4 @@
-class FollowsController < ApplicationController
+class FollowsController < LazyController
   
   include ApiRespondable
   

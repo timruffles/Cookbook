@@ -1,4 +1,4 @@
-class ChefsController < ApplicationController
+class ChefsController < LazyController
   
   def show
     

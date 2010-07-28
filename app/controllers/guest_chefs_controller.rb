@@ -1,4 +1,4 @@
-class GuestChefsController < ApplicationController
+class GuestChefsController < LazyController
   
   def new
     

@@ -2,7 +2,7 @@
 %html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
   %head
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}/
-    %title
+    %title The Business Cookbook - punchy business recipes from experts
     = stylesheet_link_tag 'yui'
     = stylesheet_link_tag '../javascripts/dijit/themes/dijit.css'
     = stylesheet_link_tag 'cookbook'
@@ -17,17 +17,17 @@
             %span.title Home
             %span.other Where it began
         %li.your_page
-          %a{:href => user_path(current_user)}
+          %a{:href => current_user ? user_path(current_user) : new_user_session_path } 
             %span.title Your page
             %span.other See your activity
         %li.working
           %span.title Recipes Begun
           %span.other.count
-            = current_user.follows_by_type('Recipe').length
+            = current_user ? current_user.follows_by_type('Recipe').length : '-'
         %li.completed
           %span.title Steps Done
           %span.score
-            = current_user.todos.completed.length
+            = current_user ? current_user.todos.completed.length : '-'
         %li.help
           %a{:href => help_path}
             %span.title Help!
@@ -44,7 +44,6 @@
                 = yield
                 #ft{:role => "contentinfo"}
                   %p
-                    Business Cookbook
         %div.yui-u
           #secondary
             = yield :side

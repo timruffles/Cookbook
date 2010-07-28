@@ -1,8 +1,8 @@
-- if(user_signed_in? && current_user.lazily_registered_date == nil)
+- if(user_signed_in? && ['',nil].include?(current_user.lazily_registered_date))
   %p
     You're currently signed in. #{link_to 'Logout', destroy_user_session_path}
 - elsif(user_signed_in? && (current_user.all_follows.length > 0 || current_user.todos.completed.length > 0))
   %p
     = "You've got unsaved progress #{link_to 'save your progress', claim_users_path} now!"
 - else
-  %p= link_to 'Sign in', new_user_session_path
+  %p= link_to 'Sign in', sign_in_force_users_path

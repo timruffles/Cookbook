@@ -1,4 +1,4 @@
-class RecipesController < ApplicationController
+class RecipesController < LazyController
   # GET /recipes
   # GET /recipes.xml
   def index

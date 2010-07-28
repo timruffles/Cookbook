@@ -3,3 +3,4 @@ module RecipesHelper
     step.todos.build :user => current_user
   end
 end
+

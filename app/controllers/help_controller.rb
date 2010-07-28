@@ -1,4 +1,4 @@
-class HelpController < ApplicationController
+class HelpController < LazyController
   
   def index
     
