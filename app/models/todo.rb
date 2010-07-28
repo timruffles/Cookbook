@@ -15,7 +15,7 @@ class Todo < ActiveRecord::Base
   }
   
   named_scope :completed, {
-    :conditions => "completed_date != ''"
+    :conditions => "completed_date IS NOT NULL"
   }
   
 end
