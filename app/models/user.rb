@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   def things_done
     done = []
     done += self.all_follows
-    done += self.todos(:conditions => "completed_date != ''")
+    done += self.todos(:conditions => "completed_date IS NOT NULL AND completed_date != ''")
     
     done.sort do |a,b|
       if a.updated_at == b.updated_at
